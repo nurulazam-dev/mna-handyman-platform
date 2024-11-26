@@ -1,3 +1,4 @@
+import FAskedQuestions from "../components/FAskedQuestions";
 import Features from "../components/Features";
 import Hero from "../components/Hero";
 import PopularServices from "../components/PopularServices";
@@ -10,6 +11,7 @@ const Home = () => {
       <Features />
       <PopularServices />
       <Testimonials />
+      <FAskedQuestions />
     </>
   );
 };
