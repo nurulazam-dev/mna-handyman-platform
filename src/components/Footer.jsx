@@ -22,7 +22,33 @@ const Footer = () => {
           </Col>
 
           {/* Quick Links Section */}
-          <Col md={4} className="mb-3">
+          <Col md={2} className="mb-3 text-start">
+            <h5>Quick Links</h5>
+            <ul className="list-unstyled">
+              <li>
+                <a href="/" className="text-white text-decoration-none">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="text-white text-decoration-none">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="/about" className="text-white text-decoration-none">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="text-white text-decoration-none">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </Col>
+          {/* Quick Links Section */}
+          <Col md={2} className="mb-3 text-start">
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
               <li>
