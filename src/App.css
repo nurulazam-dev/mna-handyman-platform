@@ -1,0 +1,43 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body {
+  font-family: "Arial", sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.bg-primary {
+  background: linear-gradient(90deg, #0056b3, #007bff);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #343a40; /* Dark Gray Background */
+  color: #ffffff; /* White Text */
+}
+
+footer a {
+  color: #ffffff; /* White Links */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Hover Effect for Links */
+}
+
+footer hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle Divider */
+}
+
+footer p {
+  margin-bottom: 0; /* Consistent Spacing */
+}
