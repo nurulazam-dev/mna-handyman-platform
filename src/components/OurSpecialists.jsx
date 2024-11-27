@@ -1,17 +1,20 @@
-import { Row, Col, Card, Container } from "react-bootstrap";
+import Slider from "react-slick";
+import { Card, Container } from "react-bootstrap";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const OurSpecialists = () => {
   const sectionStyle = {
-    padding: "60px 20px",
-    backgroundColor: "#f9f9f9",
+    padding: "10px",
+    marginBottom: "25px",
   };
 
   const headerStyle = {
     fontSize: "2.5rem",
     fontWeight: "bold",
     textAlign: "center",
-    marginBottom: "40px",
+    marginBottom: "10px",
   };
 
   const cardStyle = {
@@ -19,7 +22,8 @@ const OurSpecialists = () => {
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
     borderRadius: "10px",
     textAlign: "center",
-    padding: "20px",
+    margin: "10px",
+    padding: "10px 5px",
     backgroundColor: "#fff",
     height: "100%",
     display: "flex",
@@ -32,7 +36,7 @@ const OurSpecialists = () => {
     width: "100px",
     height: "100px",
     borderRadius: "50%",
-    margin: "0 auto 15px",
+    margin: "0 auto 2px",
     objectFit: "cover",
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
   };
@@ -46,7 +50,11 @@ const OurSpecialists = () => {
   const roleStyle = {
     fontSize: "1rem",
     color: "#6c757d",
-    marginBottom: "15px",
+    marginBottom: "8px",
+  };
+
+  const descriptionStyle = {
+    fontSize: "15px",
   };
 
   const socialIconsStyle = {
@@ -110,13 +118,37 @@ const OurSpecialists = () => {
     },
   ];
 
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024, // Tablet
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768, // Mobile
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <section style={sectionStyle}>
       <h2 style={headerStyle}>Meet Our Specialists</h2>
       <Container>
-        <Row>
+        <Slider {...sliderSettings}>
           {specialists.map((specialist, index) => (
-            <Col md={6} lg={3} className="mb-4" key={index}>
+            <div key={index}>
               <Card style={cardStyle}>
                 <img
                   src={specialist.image}
@@ -128,7 +160,9 @@ const OurSpecialists = () => {
                   <Card.Subtitle style={roleStyle}>
                     {specialist.role}
                   </Card.Subtitle>
-                  <Card.Text>{specialist.description}</Card.Text>
+                  <Card.Text style={descriptionStyle}>
+                    {specialist.description}
+                  </Card.Text>
                   <div style={socialIconsStyle}>
                     <a
                       href={specialist.social.facebook}
@@ -154,9 +188,9 @@ const OurSpecialists = () => {
                   </div>
                 </Card.Body>
               </Card>
-            </Col>
+            </div>
           ))}
-        </Row>
+        </Slider>
       </Container>
     </section>
   );
