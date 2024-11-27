@@ -5,10 +5,9 @@ import { FaClock, FaTag, FaGift } from "react-icons/fa";
 const SpecialOffers = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-  // Function to calculate time left for the offer
   function calculateTimeLeft() {
     const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 7); // Set the offer to expire in 7 days
+    targetDate.setDate(targetDate.getDate() + 7);
     const now = new Date();
     const difference = targetDate - now;
 
@@ -31,11 +30,6 @@ const SpecialOffers = () => {
     }, 1000);
     return () => clearInterval(timer);
   }, []);
-
-  const sectionStyle = {
-    padding: "60px 20px",
-    backgroundColor: "#f8f9fa",
-  };
 
   const headerStyle = {
     fontSize: "2.5rem",
@@ -79,7 +73,7 @@ const SpecialOffers = () => {
   };
 
   return (
-    <section style={sectionStyle}>
+    <section>
       <h2 style={headerStyle}>Special Offers & Promotions</h2>
       <p style={subHeaderStyle}>
         Don’t miss out on our limited-time discounts and exclusive promotions!

@@ -1,24 +1,39 @@
-import { Row, Col, Card } from "react-bootstrap";
-import { FaMedal, FaUsers, FaHandshake } from "react-icons/fa";
+import { Row, Col, Card, Button } from "react-bootstrap";
+import { FaUsers, FaAward, FaTools } from "react-icons/fa";
 
 const AboutUs = () => {
   const sectionStyle = {
-    padding: "50px 0",
-    backgroundColor: "#f8f9fa",
+    padding: "60px 20px",
+    backgroundColor: "#f9f9f9",
   };
 
-  const titleStyle = {
+  const headerStyle = {
     fontSize: "2.5rem",
-    marginBottom: "20px",
-    textAlign: "center",
     fontWeight: "bold",
+    textAlign: "center",
+    marginBottom: "20px",
   };
 
-  const subtitleStyle = {
+  const subHeaderStyle = {
     fontSize: "1.2rem",
     color: "#6c757d",
-    marginBottom: "40px",
     textAlign: "center",
+    marginBottom: "40px",
+  };
+
+  const highlightCardStyle = {
+    border: "none",
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+    borderRadius: "10px",
+    padding: "20px",
+    textAlign: "center",
+    transition: "transform 0.3s ease-in-out",
+  };
+
+  const highlightIconStyle = {
+    color: "#007bff",
+    fontSize: "3rem",
+    marginBottom: "15px",
   };
 
   const textStyle = {
@@ -28,71 +43,63 @@ const AboutUs = () => {
     marginBottom: "20px",
   };
 
-  const iconStyle = {
-    color: "#007bff",
-    marginBottom: "15px",
-  };
-
-  const cardStyle = {
-    border: "none",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-    borderRadius: "10px",
-    padding: "20px",
-    textAlign: "center",
-  };
-
-  const imageStyle = {
+  const teamImageStyle = {
     borderRadius: "10px",
     width: "100%",
     height: "auto",
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-    marginBottom: "20px",
+  };
+
+  const buttonStyle = {
+    backgroundColor: "#007bff",
+    border: "none",
+    fontSize: "1rem",
+    padding: "10px 20px",
   };
 
   return (
     <section style={sectionStyle}>
+      {/* Header */}
       <div>
-        <h2 style={titleStyle}>About Us</h2>
-        <p style={subtitleStyle}>
-          Discover our story, our mission, and what makes HandyMan Services your
-          trusted partner for all repair and maintenance needs.
+        <h2 style={headerStyle}>About Us</h2>
+        <p style={subHeaderStyle}>
+          Learn more about who we are, what we do, and why HandyMan Services is
+          your best choice.
         </p>
       </div>
 
+      {/* Main Content */}
       <Row className="align-items-center mb-5">
-        {/* About the Company */}
+        {/* Text Section */}
         <Col md={6} className="mb-4">
           <p style={textStyle}>
-            HandyMan Services has been delivering reliable home and office
-            repair solutions since 2010. Our mission is to bring peace of mind
-            to our customers by offering skilled professionals who get the job
-            done right the first time.
+            HandyMan Services has been providing top-notch repair and
+            maintenance solutions since 2010. Our mission is to simplify home
+            repairs and ensure our clients receive the highest quality of
+            service, on time and on budget.
           </p>
           <p style={textStyle}>
-            With a team of over 50 experts, we handle everything from minor
-            repairs to major installations, serving thousands of happy customers
-            every year. Our vision is to be the go-to platform for anyone
-            seeking trustworthy handyman services.
+            With a dedicated team of skilled professionals, we’ve completed over
+            15,000 successful projects, making us a trusted partner for homes
+            and businesses alike. From plumbing to carpentry, we handle it all
+            with care and precision.
           </p>
+          <Button style={buttonStyle} href="/contact">
+            Get in Touch
+          </Button>
         </Col>
 
-        {/* Team Image */}
+        {/* Image Section */}
         <Col md={6} className="mb-4">
           <img
             src="https://via.placeholder.com/600x400"
-            alt="Our Team"
-            style={imageStyle}
+            alt="HandyMan Team"
+            style={teamImageStyle}
           />
-          <p
-            className="text-center"
-            style={{ fontSize: "1rem", color: "#6c757d" }}
-          >
-            Meet our dedicated team of professionals!
-          </p>
         </Col>
       </Row>
 
-      {/* Core Values Section */}
+      {/* Highlights Section */}
       <div>
         <h3
           style={{
@@ -101,65 +108,38 @@ const AboutUs = () => {
             marginBottom: "30px",
           }}
         >
-          Our Core Values
+          What Makes Us Special
         </h3>
         <Row>
           <Col md={4}>
-            <Card style={cardStyle}>
-              <FaUsers size={50} style={iconStyle} />
-              <h5>Customer Focus</h5>
+            <Card style={highlightCardStyle}>
+              <FaUsers style={highlightIconStyle} />
+              <h5>Skilled Team</h5>
               <p>
-                We prioritize customer satisfaction above all else, ensuring a
-                seamless experience from start to finish.
+                Our team consists of certified professionals with years of
+                experience in the field.
               </p>
             </Card>
           </Col>
           <Col md={4}>
-            <Card style={cardStyle}>
-              <FaHandshake size={50} style={iconStyle} />
-              <h5>Integrity</h5>
+            <Card style={highlightCardStyle}>
+              <FaAward style={highlightIconStyle} />
+              <h5>Award-Winning Service</h5>
               <p>
-                Honesty and transparency are the cornerstones of our work. You
-                can trust us to deliver what we promise.
+                Recognized for excellence, we consistently deliver award-winning
+                quality and customer satisfaction.
               </p>
             </Card>
           </Col>
           <Col md={4}>
-            <Card style={cardStyle}>
-              <FaMedal size={50} style={iconStyle} />
-              <h5>Excellence</h5>
+            <Card style={highlightCardStyle}>
+              <FaTools style={highlightIconStyle} />
+              <h5>Comprehensive Solutions</h5>
               <p>
-                We strive for excellence in every service we provide, from small
-                fixes to complex projects.
+                From small repairs to large projects, we offer a wide range of
+                handyman services tailored to your needs.
               </p>
             </Card>
-          </Col>
-        </Row>
-      </div>
-
-      {/* Achievements Section */}
-      <div style={{ marginTop: "50px" }}>
-        <h3
-          style={{
-            textAlign: "center",
-            fontWeight: "bold",
-            marginBottom: "30px",
-          }}
-        >
-          Our Achievements
-        </h3>
-        <Row className="text-center">
-          <Col md={4}>
-            <h1 style={{ color: "#007bff", fontWeight: "bold" }}>10+</h1>
-            <p>Years in Business</p>
-          </Col>
-          <Col md={4}>
-            <h1 style={{ color: "#007bff", fontWeight: "bold" }}>15,000+</h1>
-            <p>Happy Customers</p>
-          </Col>
-          <Col md={4}>
-            <h1 style={{ color: "#007bff", fontWeight: "bold" }}>50+</h1>
-            <p>Skilled Professionals</p>
           </Col>
         </Row>
       </div>
