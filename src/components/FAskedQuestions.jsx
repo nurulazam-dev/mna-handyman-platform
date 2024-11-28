@@ -2,9 +2,9 @@ import { Accordion } from "react-bootstrap";
 
 const FAskedQuestions = () => {
   return (
-    <section className="container">
-      <h2 className="text-center">Frequently Asked Questions</h2>
-      <Accordion className="mt-4">
+    <section className="container sectionClass">
+      <h1 className="headingClass">Frequently Asked Questions</h1>
+      <Accordion>
         <Accordion.Item eventKey="0">
           <Accordion.Header>What areas do you serve?</Accordion.Header>
           <Accordion.Body>

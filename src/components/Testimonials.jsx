@@ -1,16 +1,10 @@
-import { Card, Container } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useRef } from "react";
 
 const Testimonials = () => {
-  const headerStyle = {
-    fontSize: "2.5rem",
-    fontWeight: "bold",
-    textAlign: "center",
-    marginBottom: "20px",
-  };
-
   const cardStyle = {
     border: "none",
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
@@ -64,6 +58,13 @@ const Testimonials = () => {
       image: "https://via.placeholder.com/80",
     },
   ];
+  let sliderRef = useRef(null);
+  const next = () => {
+    sliderRef.slickNext();
+  };
+  const previous = () => {
+    sliderRef.slickPrev();
+  };
 
   const sliderSettings = {
     dots: true,
@@ -82,37 +83,48 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="container">
-      <h2 style={headerStyle}>What Our Clients Say</h2>
-      <Container>
-        <Slider {...sliderSettings}>
-          {testimonials.map((testimonial, index) => (
-            <div key={index}>
-              <Card style={cardStyle}>
-                <Card.Body>
-                  <img
-                    src={testimonial.image}
-                    alt={`${testimonial.name}'s avatar`}
-                    style={avatarStyle}
-                  />
-                  <Card.Text
-                    className="mt-3"
-                    style={{ fontSize: "1rem", color: "#555" }}
-                  >
-                    {testimonial.feedback}
-                  </Card.Text>
-                  <Card.Title
-                    className="mt-3"
-                    style={{ fontWeight: "bold", fontSize: "1.1rem" }}
-                  >
-                    {testimonial.name}
-                  </Card.Title>
-                </Card.Body>
-              </Card>
-            </div>
-          ))}
-        </Slider>
-      </Container>
+    <section className="container sectionClass">
+      <h1 className="headingClass">What Our Clients Say</h1>
+      <Slider
+        ref={(slider) => {
+          sliderRef = slider;
+        }}
+        {...sliderSettings}
+      >
+        {testimonials.map((testimonial, index) => (
+          <div key={index}>
+            <Card style={cardStyle}>
+              <Card.Body>
+                <img
+                  src={testimonial.image}
+                  alt={`${testimonial.name}'s avatar`}
+                  style={avatarStyle}
+                />
+                <Card.Text
+                  className="mt-3"
+                  style={{ fontSize: "1rem", color: "#555" }}
+                >
+                  {testimonial.feedback}
+                </Card.Text>
+                <Card.Title
+                  className="mt-3"
+                  style={{ fontWeight: "bold", fontSize: "1.1rem" }}
+                >
+                  {testimonial.name}
+                </Card.Title>
+              </Card.Body>
+            </Card>
+          </div>
+        ))}
+      </Slider>
+      <div style={{ textAlign: "center", marginTop: "30px" }}>
+        <Button className="mx-1" onClick={previous}>
+          Previous
+        </Button>
+        <Button className="mx-1" onClick={next}>
+          Next
+        </Button>
+      </div>
     </section>
   );
 };
