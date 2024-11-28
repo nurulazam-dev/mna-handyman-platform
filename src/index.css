@@ -25,21 +25,23 @@
 }
 
 .customBtn {
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: rgb(20, 20, 223);
+  /* background-color: rgb(35, 69, 236); */
+  background-color: blue;
   color: white;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
 .customBtn:hover {
-  border-color: #646cff;
-  background-color: rgb(2, 32, 115);
+  /* background-color: rgb(36, 2, 173); */
+  background-color: #fff;
+  color: black;
 }
 
 /* @media (prefers-color-scheme: light) {

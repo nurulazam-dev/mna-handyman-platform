@@ -5,18 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const OurSpecialists = () => {
-  const sectionStyle = {
-    padding: "10px",
-    marginBottom: "25px",
-  };
-
-  const headerStyle = {
-    fontSize: "2.5rem",
-    fontWeight: "bold",
-    textAlign: "center",
-    marginBottom: "10px",
-  };
-
   const cardStyle = {
     border: "none",
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
@@ -143,8 +131,8 @@ const OurSpecialists = () => {
   };
 
   return (
-    <section style={sectionStyle} className="container">
-      <h2 style={headerStyle}>Meet Our Specialists</h2>
+    <section className="container sectionClass mb-5">
+      <h2 className="headingClass">Meet Our Specialists</h2>
       <Slider {...sliderSettings}>
         {specialists.map((specialist, index) => (
           <div key={index}>
