@@ -2,20 +2,6 @@ import { Row, Col, Card, Button } from "react-bootstrap";
 import { FaUsers, FaAward, FaTools } from "react-icons/fa";
 
 const AboutUs = () => {
-  const headerStyle = {
-    fontSize: "2.5rem",
-    fontWeight: "bold",
-    textAlign: "center",
-    marginBottom: "20px",
-  };
-
-  const subHeaderStyle = {
-    fontSize: "1.2rem",
-    color: "#6c757d",
-    textAlign: "center",
-    marginBottom: "40px",
-  };
-
   const highlightCardStyle = {
     border: "none",
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
@@ -45,23 +31,9 @@ const AboutUs = () => {
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
   };
 
-  const buttonStyle = {
-    backgroundColor: "#007bff",
-    border: "none",
-    fontSize: "1rem",
-    padding: "10px 20px",
-  };
-
   return (
-    <section className="container">
-      {/* Header */}
-      <div>
-        <h2 style={headerStyle}>About Us</h2>
-        <p style={subHeaderStyle}>
-          Learn more about who we are, what we do, and why HandyMan Services is
-          your best choice.
-        </p>
-      </div>
+    <section className="container sectionClass">
+      <h2 className="headingClass">About Us</h2>
 
       {/* Main Content */}
       <Row className="align-items-center mb-5">
@@ -79,7 +51,7 @@ const AboutUs = () => {
             and businesses alike. From plumbing to carpentry, we handle it all
             with care and precision.
           </p>
-          <Button style={buttonStyle} href="/contact">
+          <Button className="customBtn" href="/contact">
             Get in Touch
           </Button>
         </Col>
