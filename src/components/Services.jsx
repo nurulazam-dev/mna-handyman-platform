@@ -32,7 +32,7 @@ const imgStyle = {
 
 const Services = () => {
   return (
-    <section className="container sectionClass border">
+    <section className="container sectionClass">
       <h2 className="headingClass">Our Services</h2>
       <Row>
         {services.map((service) => (

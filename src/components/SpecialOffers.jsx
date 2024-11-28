@@ -31,18 +31,11 @@ const SpecialOffers = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const headerStyle = {
-    fontSize: "2.5rem",
-    fontWeight: "bold",
-    textAlign: "center",
-    marginBottom: "20px",
-  };
-
   const subHeaderStyle = {
-    fontSize: "1.2rem",
+    fontSize: "1rem",
     color: "#6c757d",
     textAlign: "center",
-    marginBottom: "40px",
+    marginBottom: "2px",
   };
 
   const cardStyle = {
@@ -66,15 +59,15 @@ const SpecialOffers = () => {
 
   const countdownStyle = {
     textAlign: "center",
-    marginBottom: "30px",
-    fontSize: "1.5rem",
-    fontWeight: "bold",
+    marginBottom: "10px",
+    fontSize: "1.2rem",
+    fontWeight: "semibold",
     color: "#d9534f",
   };
 
   return (
-    <section className="container">
-      <h2 style={headerStyle}>Special Offers & Promotions</h2>
+    <section className="container sectionClass">
+      <h1 className="headingClass">Special Offers & Promotions</h1>
       <p style={subHeaderStyle}>
         Don’t miss out on our limited-time discounts and exclusive promotions!
         Act fast before they’re gone.
@@ -87,9 +80,9 @@ const SpecialOffers = () => {
         {timeLeft.minutes || 0}m {timeLeft.seconds || 0}s
       </div>
 
-      <Row className="mt-4">
+      <Row>
         {/* Offer 1 */}
-        <Col md={4} className="mb-4">
+        <Col md={4}>
           <Card style={cardStyle} className="offer-card">
             <img
               src="https://via.placeholder.com/400x200"
@@ -97,19 +90,21 @@ const SpecialOffers = () => {
               style={cardImageStyle}
             />
             <Card.Body>
-              <FaTag style={iconStyle} />
-              <Card.Title>25% Off All Services</Card.Title>
+              <div className="d-flex justify-content-center">
+                <FaTag style={iconStyle} className="me-2" />
+                <Card.Title>25% Off All Services</Card.Title>
+              </div>
               <Card.Text>
                 Enjoy a 25% discount on all handyman services until the end of
                 the month!
               </Card.Text>
-              <Button variant="primary">Claim Offer</Button>
+              <Button className="customBtn">Claim Offer</Button>
             </Card.Body>
           </Card>
         </Col>
 
         {/* Offer 2 */}
-        <Col md={4} className="mb-4">
+        <Col md={4}>
           <Card style={cardStyle} className="offer-card">
             <img
               src="https://via.placeholder.com/400x200"
@@ -117,19 +112,21 @@ const SpecialOffers = () => {
               style={cardImageStyle}
             />
             <Card.Body>
-              <FaGift style={iconStyle} />
-              <Card.Title>First-Time Customer Bonus</Card.Title>
+              <div className="d-flex justify-content-center">
+                <FaGift style={iconStyle} className="me-2" />
+                <Card.Title>First-Time Customer Bonus</Card.Title>
+              </div>
               <Card.Text>
                 New customers get a $20 voucher for their first booking. Use it
                 for any of our services!
               </Card.Text>
-              <Button variant="primary">Get Started</Button>
+              <Button className="customBtn">Get Started</Button>
             </Card.Body>
           </Card>
         </Col>
 
         {/* Offer 3 */}
-        <Col md={4} className="mb-4">
+        <Col md={4}>
           <Card style={cardStyle} className="offer-card">
             <img
               src="https://via.placeholder.com/400x200"
@@ -137,13 +134,15 @@ const SpecialOffers = () => {
               style={cardImageStyle}
             />
             <Card.Body>
-              <FaTag style={iconStyle} />
-              <Card.Title>Referral Rewards</Card.Title>
+              <div className="d-flex justify-content-center">
+                <FaTag style={iconStyle} className="me-2" />
+                <Card.Title>Referral Rewards</Card.Title>
+              </div>
               <Card.Text>
                 Refer a friend and both of you receive $15 off your next
                 service. It&apos,s a win-win!
               </Card.Text>
-              <Button variant="primary">Refer Now</Button>
+              <Button className="customBtn">Refer Now</Button>
             </Card.Body>
           </Card>
         </Col>
