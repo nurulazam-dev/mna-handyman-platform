@@ -1,24 +1,44 @@
 import { Link } from "react-router-dom";
 import { Card, Button, Row, Col } from "react-bootstrap";
+import s1 from "../assets/images/service-1.jpg";
+import s2 from "../assets/images/service-2.jpg";
+import s3 from "../assets/images/service-3.jpg";
 
 const services = [
-  { id: 1, title: "Plumbing", description: "Fix your pipes and leaks." },
-  { id: 2, title: "Electrical", description: "Resolve electrical issues." },
-  { id: 3, title: "Carpentry", description: "Custom woodwork and repairs." },
+  {
+    id: 1,
+    title: "Plumbing",
+    img: s1,
+    description: "Fix your pipes and leaks.",
+  },
+  {
+    id: 2,
+    title: "Electrical",
+    img: s2,
+    description: "Resolve electrical issues.",
+  },
+  {
+    id: 3,
+    title: "Carpentry",
+    img: s3,
+    description: "Custom woodwork and repairs.",
+  },
 ];
+
+const imgStyle = {
+  height: "200px",
+  width: "300px",
+};
 
 const Services = () => {
   return (
-    <section>
+    <section className="container">
       <h2 className="text-center">Our Services</h2>
       <Row className="mt-4">
         {services.map((service) => (
           <Col key={service.id} sm={12} md={6} lg={4} className="mb-4">
             <Card>
-              <Card.Img
-                variant="top"
-                src="https://via.placeholder.com/300x200"
-              />
+              <Card.Img style={imgStyle} variant="top" src={service.img} />
               <Card.Body>
                 <Card.Title>{service.title}</Card.Title>
                 <Card.Text>{service.description}</Card.Text>

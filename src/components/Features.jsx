@@ -3,7 +3,7 @@ import { FaTools, FaThumbsUp, FaShieldAlt, FaUsers } from "react-icons/fa";
 
 const Features = () => {
   return (
-    <section className="text-center my-5">
+    <section className="container text-center my-5">
       <h2>Why Choose Us?</h2>
       <Row className="mt-4">
         <Col md={3}>

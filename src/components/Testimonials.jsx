@@ -4,11 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Testimonials = () => {
-  const sectionStyle = {
-    padding: "20px",
-    marginBottom: "15px",
-  };
-
   const headerStyle = {
     fontSize: "2.5rem",
     fontWeight: "bold",
@@ -87,7 +82,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section style={sectionStyle}>
+    <section className="container">
       <h2 style={headerStyle}>What Our Clients Say</h2>
       <Container>
         <Slider {...sliderSettings}>

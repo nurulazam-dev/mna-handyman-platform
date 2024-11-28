@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import { Card, Container } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -143,55 +143,53 @@ const OurSpecialists = () => {
   };
 
   return (
-    <section style={sectionStyle}>
+    <section style={sectionStyle} className="container">
       <h2 style={headerStyle}>Meet Our Specialists</h2>
-      <Container>
-        <Slider {...sliderSettings}>
-          {specialists.map((specialist, index) => (
-            <div key={index}>
-              <Card style={cardStyle}>
-                <img
-                  src={specialist.image}
-                  alt={`${specialist.name}'s avatar`}
-                  style={avatarStyle}
-                />
-                <Card.Body>
-                  <Card.Title style={nameStyle}>{specialist.name}</Card.Title>
-                  <Card.Subtitle style={roleStyle}>
-                    {specialist.role}
-                  </Card.Subtitle>
-                  <Card.Text style={descriptionStyle}>
-                    {specialist.description}
-                  </Card.Text>
-                  <div style={socialIconsStyle}>
-                    <a
-                      href={specialist.social.facebook}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaFacebook style={{ ...socialIconStyle }} />
-                    </a>
-                    <a
-                      href={specialist.social.twitter}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaTwitter style={{ ...socialIconStyle }} />
-                    </a>
-                    <a
-                      href={specialist.social.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaLinkedin style={{ ...socialIconStyle }} />
-                    </a>
-                  </div>
-                </Card.Body>
-              </Card>
-            </div>
-          ))}
-        </Slider>
-      </Container>
+      <Slider {...sliderSettings}>
+        {specialists.map((specialist, index) => (
+          <div key={index}>
+            <Card style={cardStyle}>
+              <img
+                src={specialist.image}
+                alt={`${specialist.name}'s avatar`}
+                style={avatarStyle}
+              />
+              <Card.Body>
+                <Card.Title style={nameStyle}>{specialist.name}</Card.Title>
+                <Card.Subtitle style={roleStyle}>
+                  {specialist.role}
+                </Card.Subtitle>
+                <Card.Text style={descriptionStyle}>
+                  {specialist.description}
+                </Card.Text>
+                <div style={socialIconsStyle}>
+                  <a
+                    href={specialist.social.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaFacebook style={{ ...socialIconStyle }} />
+                  </a>
+                  <a
+                    href={specialist.social.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaTwitter style={{ ...socialIconStyle }} />
+                  </a>
+                  <a
+                    href={specialist.social.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedin style={{ ...socialIconStyle }} />
+                  </a>
+                </div>
+              </Card.Body>
+            </Card>
+          </div>
+        ))}
+      </Slider>
     </section>
   );
 };

@@ -2,11 +2,6 @@ import { Form, Button, Row, Col } from "react-bootstrap";
 import { FaUser, FaWrench, FaCalendarAlt } from "react-icons/fa";
 
 const ContactBookingForm = () => {
-  const sectionStyle = {
-    padding: "50px 20px",
-    backgroundColor: "#f8f9fa",
-  };
-
   const formContainerStyle = {
     maxWidth: "800px",
     margin: "0 auto",
@@ -38,10 +33,10 @@ const ContactBookingForm = () => {
   };
 
   return (
-    <section style={sectionStyle}>
-      <div style={formContainerStyle}>
+    <section className="container">
+      <div>
         <h2 style={headerStyle}>Contact & Booking Form</h2>
-        <Form>
+        <Form style={formContainerStyle}>
           {/* Contact Information */}
           <h5 className="mb-3">
             <FaUser style={iconStyle} /> Contact Information

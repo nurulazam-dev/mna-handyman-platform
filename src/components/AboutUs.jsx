@@ -2,11 +2,6 @@ import { Row, Col, Card, Button } from "react-bootstrap";
 import { FaUsers, FaAward, FaTools } from "react-icons/fa";
 
 const AboutUs = () => {
-  const sectionStyle = {
-    padding: "60px 20px",
-    backgroundColor: "#f9f9f9",
-  };
-
   const headerStyle = {
     fontSize: "2.5rem",
     fontWeight: "bold",
@@ -58,7 +53,7 @@ const AboutUs = () => {
   };
 
   return (
-    <section style={sectionStyle}>
+    <section className="container">
       {/* Header */}
       <div>
         <h2 style={headerStyle}>About Us</h2>

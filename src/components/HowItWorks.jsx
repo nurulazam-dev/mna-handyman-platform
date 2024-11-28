@@ -2,10 +2,6 @@ import { Row, Col, Card } from "react-bootstrap";
 import { FaClipboardList, FaCalendarAlt, FaCheckCircle } from "react-icons/fa";
 
 const HowItWorks = () => {
-  const sectionStyle = {
-    padding: "40px 0",
-  };
-
   const titleStyle = {
     fontSize: "2.5rem",
     marginBottom: "20px",
@@ -32,7 +28,7 @@ const HowItWorks = () => {
   };
 
   return (
-    <section style={sectionStyle}>
+    <section className="container">
       <div className="text-center">
         <h2 style={titleStyle}>How It Works</h2>
         <p style={subtitleStyle}>

@@ -11,7 +11,7 @@ function App() {
     <>
       <Router>
         <NavigationBar />
-        <div className="container mt-4">
+        <div className="">
           <Routes>
             <Route path="/" element={<Home />} />
             {/* <Route path="/services" element={<Services />} /> */}

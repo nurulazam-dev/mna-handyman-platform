@@ -73,7 +73,7 @@ const SpecialOffers = () => {
   };
 
   return (
-    <section>
+    <section className="container">
       <h2 style={headerStyle}>Special Offers & Promotions</h2>
       <p style={subHeaderStyle}>
         Don’t miss out on our limited-time discounts and exclusive promotions!
@@ -100,8 +100,8 @@ const SpecialOffers = () => {
               <FaTag style={iconStyle} />
               <Card.Title>25% Off All Services</Card.Title>
               <Card.Text>
-                Enjoy a 25% discount on all handyman services this season. Offer
-                valid until the end of the month!
+                Enjoy a 25% discount on all handyman services until the end of
+                the month!
               </Card.Text>
               <Button variant="primary">Claim Offer</Button>
             </Card.Body>
