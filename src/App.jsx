@@ -5,6 +5,7 @@ import NavigationBar from "./components/NavigationBar";
 
 import "./App.css";
 import ServiceDetails from "./pages/ServiceDetails";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             {/* <Route path="/about" element={<About />} /> */}
             {/* <Route path="/contact" element={<Contact />} /> */}
             <Route path="/services/:id" element={<ServiceDetails />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
         <Footer />
