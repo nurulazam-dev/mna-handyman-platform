@@ -32,8 +32,8 @@ const imgStyle = {
 
 const Services = () => {
   return (
-    <section className="container">
-      <h2 className="text-center">Our Services</h2>
+    <section className="container sectionClass">
+      <h2 className="headingClass">Our Services</h2>
       <Row className="mt-4">
         {services.map((service) => (
           <Col key={service.id} sm={12} md={6} lg={4} className="mb-4">
@@ -43,7 +43,7 @@ const Services = () => {
                 <Card.Title>{service.title}</Card.Title>
                 <Card.Text>{service.description}</Card.Text>
                 <Link to={`/services/${service.id}`}>
-                  <Button variant="primary">Learn More</Button>
+                  <Button className="customBtn">Learn More</Button>
                 </Link>
               </Card.Body>
             </Card>
