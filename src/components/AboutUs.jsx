@@ -1,22 +1,6 @@
-import { Row, Col, Card, Button } from "react-bootstrap";
-import { FaUsers, FaAward, FaTools } from "react-icons/fa";
+import { Row, Col, Button } from "react-bootstrap";
 
 const AboutUs = () => {
-  const highlightCardStyle = {
-    border: "none",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-    borderRadius: "10px",
-    padding: "20px",
-    textAlign: "center",
-    transition: "transform 0.3s ease-in-out",
-  };
-
-  const highlightIconStyle = {
-    color: "#007bff",
-    fontSize: "3rem",
-    marginBottom: "15px",
-  };
-
   const textStyle = {
     fontSize: "1rem",
     lineHeight: "1.6",
@@ -33,11 +17,9 @@ const AboutUs = () => {
 
   return (
     <section className="container sectionClass">
-      <h2 className="headingClass">About Us</h2>
+      <h1 className="headingClass">About Us</h1>
 
-      {/* Main Content */}
       <Row className="align-items-center mb-5">
-        {/* Text Section */}
         <Col md={6} className="mb-4">
           <p style={textStyle}>
             HandyMan Services has been providing top-notch repair and
@@ -56,7 +38,6 @@ const AboutUs = () => {
           </Button>
         </Col>
 
-        {/* Image Section */}
         <Col md={6} className="mb-4">
           <img
             src="https://via.placeholder.com/600x400"
@@ -65,51 +46,6 @@ const AboutUs = () => {
           />
         </Col>
       </Row>
-
-      {/* Highlights Section */}
-      <div>
-        <h3
-          style={{
-            textAlign: "center",
-            fontWeight: "bold",
-            marginBottom: "30px",
-          }}
-        >
-          What Makes Us Special
-        </h3>
-        <Row>
-          <Col md={4}>
-            <Card style={highlightCardStyle}>
-              <FaUsers style={highlightIconStyle} />
-              <h5>Skilled Team</h5>
-              <p>
-                Our team consists of certified professionals with years of
-                experience in the field.
-              </p>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card style={highlightCardStyle}>
-              <FaAward style={highlightIconStyle} />
-              <h5>Award-Winning Service</h5>
-              <p>
-                Recognized for excellence, we consistently deliver award-winning
-                quality and customer satisfaction.
-              </p>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card style={highlightCardStyle}>
-              <FaTools style={highlightIconStyle} />
-              <h5>Comprehensive Solutions</h5>
-              <p>
-                From small repairs to large projects, we offer a wide range of
-                handyman services tailored to your needs.
-              </p>
-            </Card>
-          </Col>
-        </Row>
-      </div>
     </section>
   );
 };
