@@ -2,16 +2,6 @@ import { Row, Col, Card } from "react-bootstrap";
 import { FaClipboardList, FaCalendarAlt, FaCheckCircle } from "react-icons/fa";
 
 const HowItWorks = () => {
-  const titleStyle = {
-    fontSize: "2.5rem",
-    marginBottom: "20px",
-  };
-
-  const subtitleStyle = {
-    fontSize: "1.1rem",
-    color: "#6c757d",
-  };
-
   const cardStyle = {
     border: "none",
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
@@ -28,17 +18,12 @@ const HowItWorks = () => {
   };
 
   return (
-    <section className="container">
-      <div className="text-center">
-        <h2 style={titleStyle}>How It Works</h2>
-        <p style={subtitleStyle}>
-          Follow these simple steps to get your job done effortlessly.
-        </p>
-      </div>
+    <section className="container sectionClass">
+      <h1 className="headingClass">How It Works</h1>
 
-      <Row className="mt-4">
+      <Row>
         {/* Step 1 */}
-        <Col md={4} className="mb-4">
+        <Col md={4}>
           <Card
             className="h-100"
             style={cardStyle}
@@ -59,7 +44,7 @@ const HowItWorks = () => {
         </Col>
 
         {/* Step 2 */}
-        <Col md={4} className="mb-4">
+        <Col md={4}>
           <Card
             className="h-100"
             style={cardStyle}
@@ -79,7 +64,7 @@ const HowItWorks = () => {
         </Col>
 
         {/* Step 3 */}
-        <Col md={4} className="mb-4">
+        <Col md={4}>
           <Card
             className="h-100"
             style={cardStyle}
