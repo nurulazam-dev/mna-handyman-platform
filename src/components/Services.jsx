@@ -32,11 +32,11 @@ const imgStyle = {
 
 const Services = () => {
   return (
-    <section className="container sectionClass">
+    <section className="container sectionClass border">
       <h2 className="headingClass">Our Services</h2>
-      <Row className="mt-4">
+      <Row>
         {services.map((service) => (
-          <Col key={service.id} sm={12} md={6} lg={4} className="mb-4">
+          <Col key={service.id} sm={12} md={6} lg={4}>
             <Card>
               <Card.Img style={imgStyle} variant="top" src={service.img} />
               <Card.Body>

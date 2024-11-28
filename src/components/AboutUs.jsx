@@ -19,7 +19,7 @@ const AboutUs = () => {
     <section className="container sectionClass">
       <h1 className="headingClass">About Us</h1>
 
-      <Row className="align-items-center mb-5">
+      <Row className="align-items-center">
         <Col md={6} className="mb-4">
           <p style={textStyle}>
             HandyMan Services has been providing top-notch repair and
@@ -38,7 +38,7 @@ const AboutUs = () => {
           </Button>
         </Col>
 
-        <Col md={6} className="mb-4">
+        <Col md={6}>
           <img
             src="https://via.placeholder.com/600x400"
             alt="HandyMan Team"
