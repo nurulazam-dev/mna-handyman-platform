@@ -1,4 +1,5 @@
 import { Form, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const pageStyle = {
@@ -12,7 +13,7 @@ const Login = () => {
 
   const cardStyle = {
     width: "100%",
-    maxWidth: "900px",
+    maxWidth: "600px",
     backgroundColor: "#fff",
     borderRadius: "10px",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
@@ -42,7 +43,7 @@ const Login = () => {
     fontSize: "2rem",
     fontWeight: "bold",
     color: "#007bff",
-    marginBottom: "20px",
+    marginBottom: "5px",
   };
 
   const inputStyle = {
@@ -65,11 +66,6 @@ const Login = () => {
     marginTop: "15px",
     fontSize: "0.9rem",
     color: "#6c757d",
-    textDecoration: "none",
-  };
-
-  const linkHoverStyle = {
-    textDecoration: "underline",
   };
 
   return (
@@ -111,26 +107,19 @@ const Login = () => {
           </Form>
 
           {/* Links */}
-          <a
-            href="/forgot-password"
-            style={linkStyle}
-            onMouseOver={(e) =>
-              (e.target.style = { ...linkStyle, ...linkHoverStyle })
-            }
-            onMouseOut={(e) => (e.target.style = { ...linkStyle })}
-          >
-            Forgot your password?
-          </a>
-          <a
-            href="/register"
-            style={linkStyle}
-            onMouseOver={(e) =>
-              (e.target.style = { ...linkStyle, ...linkHoverStyle })
-            }
-            onMouseOut={(e) => (e.target.style = { ...linkStyle })}
-          >
-            Don’t have an account? Register here.
-          </a>
+          <div style={linkStyle}>
+            Forgot your password?{" "}
+            <Link to="/forgot-password" className="text-decoration-none">
+              <small className="text-primary">Reset Password</small>
+            </Link>
+          </div>
+
+          <div style={linkStyle} className="mt-1">
+            Don’t have an account?{" "}
+            <Link to="/register" className="text-decoration-none">
+              <small className="text-primary">Register Here</small>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
