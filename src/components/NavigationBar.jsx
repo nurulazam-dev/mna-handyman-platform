@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { FaMoon, FaSun } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -77,18 +78,22 @@ const NavigationBar = () => {
             </Button>
 
             {/* Login and Sign Up Buttons */}
-            <Button
-              variant={darkMode ? "outline-light" : "outline-primary"}
-              style={buttonStyle}
-            >
-              Login
-            </Button>
-            <Button
-              variant={darkMode ? "light" : "primary"}
-              style={buttonStyle}
-            >
-              Sign Up
-            </Button>
+            <Link to="/login">
+              <Button
+                variant={darkMode ? "outline-light" : "outline-primary"}
+                style={buttonStyle}
+              >
+                Login
+              </Button>
+            </Link>
+            <Link to="/register">
+              <Button
+                variant={darkMode ? "light" : "primary"}
+                style={buttonStyle}
+              >
+                Sign Up
+              </Button>
+            </Link>
           </div>
         </Navbar.Collapse>
       </Container>
