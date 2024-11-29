@@ -10,6 +10,7 @@ import OurSpecialists from "../components/OurSpecialists";
 import ServicesSection from "../components/ServicesSection";
 import SpecialOffers from "../components/SpecialOffers";
 import Testimonials from "../components/Testimonials";
+import Blog from "./Blog";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       <FAskedQuestions />
       <Testimonials />
       <GoogleMap />
+      <Blog />
     </>
   );
 };
