@@ -52,11 +52,11 @@ const NavigationBar = () => {
         <Navbar.Collapse id="navbar-content">
           <Nav className="mx-auto">
             {/* Center Navigation Links */}
-            <Nav.Link href="/about" style={navLinkStyle}>
-              About
-            </Nav.Link>
             <Nav.Link href="/services" style={navLinkStyle}>
               Services
+            </Nav.Link>
+            <Nav.Link href="/about" style={navLinkStyle}>
+              About
             </Nav.Link>
             <Nav.Link href="/blog" style={navLinkStyle}>
               Blog

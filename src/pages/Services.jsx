@@ -118,30 +118,23 @@ const ServicesPage = () => {
       description: "Quick and reliable garage door fixes.",
       image: "https://via.placeholder.com/300?text=Garage+Door+Repair",
     },
-    {
+    /* {
       id: 20,
       title: "Pool Maintenance",
       description: "Keep your pool clean and functional.",
       image: "https://via.placeholder.com/300?text=Pool+Maintenance",
-    },
+    }, */
   ];
 
-  // State to track the number of services to display
   const [visibleServices, setVisibleServices] = useState(12);
 
-  // Function to load more services
   const handleSeeMore = () => {
     setVisibleServices((prev) => Math.min(prev + 4, allServices.length));
   };
 
   return (
-    <Container style={{ padding: "60px 20px" }}>
-      <h2
-        className="headingClass"
-        style={{ fontWeight: "bold", fontSize: "2.5rem" }}
-      >
-        Our Services
-      </h2>
+    <Container style={{ padding: "60px 10px" }}>
+      <h2 className="headingClass text-primary mb-3">Our Services</h2>
       <Row>
         {allServices.slice(0, visibleServices).map((service) => (
           <Col
@@ -191,7 +184,7 @@ const ServicesPage = () => {
             style={{
               backgroundColor: "#007bff",
               border: "none",
-              padding: "10px 20px",
+              padding: "8px 20px",
               fontSize: "1rem",
               borderRadius: "5px",
             }}
