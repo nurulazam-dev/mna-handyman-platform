@@ -6,7 +6,7 @@ import Hero from "../components/Hero";
 import HowItWorks from "../components/HowItWorks";
 import MakesUsSpecial from "../components/MakesUsSpecial";
 import OurSpecialists from "../components/OurSpecialists";
-import Services from "../components/Services";
+import ServicesSection from "../components/ServicesSection";
 import SpecialOffers from "../components/SpecialOffers";
 import Testimonials from "../components/Testimonials";
 
@@ -15,7 +15,7 @@ const Home = () => {
     <>
       <Hero />
       <Features />
-      <Services />
+      <ServicesSection />
       <OurSpecialists />
       <AboutUs />
       <MakesUsSpecial />
