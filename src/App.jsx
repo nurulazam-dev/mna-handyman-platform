@@ -7,16 +7,18 @@ import "./App.css";
 import ServiceDetails from "./pages/ServiceDetails";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
     <>
       <Router>
         <NavigationBar />
-        <div className="">
+        <div className="py-3">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
             {/* <Route path="/services" element={<Services />} /> */}
             {/* <Route path="/about" element={<About />} /> */}
             {/* <Route path="/contact" element={<Contact />} /> */}

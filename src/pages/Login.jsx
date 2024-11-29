@@ -51,15 +51,10 @@ const Login = () => {
     padding: "10px",
     marginBottom: "20px",
   };
-
   const buttonStyle = {
-    backgroundColor: "#007bff",
-    border: "none",
+    width: "100%",
     padding: "10px",
     fontSize: "1rem",
-    marginTop: "10px",
-    width: "100%",
-    borderRadius: "5px",
   };
 
   const linkStyle = {
@@ -101,7 +96,7 @@ const Login = () => {
             </Form.Group>
 
             {/* Login Button */}
-            <Button type="submit" style={buttonStyle}>
+            <Button type="submit" style={buttonStyle} className="customBtn">
               Login
             </Button>
           </Form>
