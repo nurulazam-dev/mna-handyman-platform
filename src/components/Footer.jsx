@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaEnvelope,
+  FaPhone,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -13,7 +14,7 @@ const Footer = () => {
       <Row className="px-5 pt-4">
         {/* About Section */}
         <Col md={4}>
-          <h5>About HandyMan Services</h5>
+          <h5 className="text-warning">About HandyMan Services</h5>
           <p>
             We provide top-notch handyman and repair services, ensuring your
             home and office are always in perfect shape.
@@ -22,7 +23,7 @@ const Footer = () => {
 
         {/* Quick Links Section */}
         <Col md={2} className="text-start">
-          <h5>Quick Links</h5>
+          <h5 className="text-warning">Quick Links</h5>
           <ul className="list-unstyled">
             <li>
               <a href="/" className="text-white text-decoration-none">
@@ -48,7 +49,7 @@ const Footer = () => {
         </Col>
         {/* Quick Links Section */}
         <Col md={2} className="text-start">
-          <h5>Quick Links</h5>
+          <h5 className="text-warning">Quick Links</h5>
           <ul className="list-unstyled">
             <li>
               <a href="/" className="text-white text-decoration-none">
@@ -75,14 +76,14 @@ const Footer = () => {
 
         {/* Contact Section */}
         <Col md={4}>
-          <h5>Contact Us</h5>
+          <h5 className="text-warning">Contact Us</h5>
           <p className="m-0">
             <FaEnvelope className="me-2" /> info@handymanservices.com
           </p>
           <p className="m-0">
-            <strong>Phone:</strong> +1 234 567 890
+            <FaPhone className="me-2" /> +88 01712 345678
           </p>
-          <div>
+          <div className="mt-3">
             <a href="https://facebook.com" className="text-white me-3">
               <FaFacebook size={24} />
             </a>
@@ -102,10 +103,10 @@ const Footer = () => {
       <hr className="border-light m-0" />
       <Row className="py-1">
         <Col className="text-center">
-          <p className="mb-0">
+          <small className="text-warning mb-0">
             &copy; {new Date().getFullYear()} HandyMan Services. All Rights
             Reserved.
-          </p>
+          </small>
         </Col>
       </Row>
     </footer>

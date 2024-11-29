@@ -24,86 +24,87 @@ const Contact = () => {
   const formStyle = {
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
     borderRadius: "10px",
-    padding: "30px",
+    padding: "10px 30px",
     backgroundColor: "#fff",
   };
 
   return (
-    <div>
-      {/* Contact Info and Form Section */}
-      <section className="container sectionClass">
-        <Row>
-          {/* Contact Information */}
-          <Col md={4} className="mb-4">
-            <Card style={contactCardStyle}>
-              <h3>Contact Information</h3>
-              <div className="mt-4">
-                <FaPhoneAlt style={iconStyle} />
-                <p>+1 234 567 890</p>
-              </div>
-              <div className="mt-4">
-                <FaEnvelope style={iconStyle} />
-                <p>contact@yourwebsite.com</p>
-              </div>
-              <div className="mt-4">
-                <FaMapMarkerAlt style={iconStyle} />
-                <p>123 Main Street, Anytown, USA</p>
-              </div>
-              <div className="mt-4">
-                <FaClock style={iconStyle} />
-                <p>Mon - Fri: 9:00 AM - 5:00 PM</p>
-              </div>
-            </Card>
-          </Col>
+    <section className="container sectionClass mt-5 pt-3">
+      <h2 className="headingClass text-primary">Contact Us</h2>
+      <Row>
+        <Col md={4} className="mb-4">
+          <Card style={contactCardStyle}>
+            <div>
+              <FaPhoneAlt style={iconStyle} />
+              <p>+88 01712 345678</p>
+            </div>
+            <div className="mt-4">
+              <FaEnvelope style={iconStyle} />
+              <p>info@handymanservices.com</p>
+            </div>
+            <div className="mt-4">
+              <FaMapMarkerAlt style={iconStyle} />
+              <p>Raozan, Chattogram, Bangladesh</p>
+            </div>
+            <div className="mt-4">
+              <FaClock style={iconStyle} />
+              <p>SUN - THU: 9:00 AM - 5:00 PM</p>
+            </div>
+          </Card>
+        </Col>
 
-          {/* Contact Form */}
-          <Col md={8}>
-            <Form style={formStyle}>
-              <h3>Send Us a Message</h3>
-              <Form.Group controlId="formName" className="mb-3 mt-4">
-                <Form.Label>Full Name</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Enter your full name"
-                  required
-                />
-              </Form.Group>
+        {/* Contact Form */}
+        <Col md={8}>
+          <Form style={formStyle}>
+            <h3 className="text-center">Send Us a Message</h3>
 
-              <Form.Group controlId="formEmail" className="mb-3">
-                <Form.Label>Email Address</Form.Label>
-                <Form.Control
-                  type="email"
-                  placeholder="Enter your email"
-                  required
-                />
-              </Form.Group>
+            <div className="d-flex justify-content-between my-3">
+              <Col md={6} className="me-1">
+                <Form.Group controlId="formFullName">
+                  <Form.Label>Full Name</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </Form.Group>
+              </Col>
+              <Col md={6}>
+                <Form.Group controlId="formEmail">
+                  <Form.Label>Email Address</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </Form.Group>
+              </Col>
+            </div>
+            <Form.Group controlId="formSubject" className="mb-3">
+              <Form.Label>Subject</Form.Label>
+              <Form.Control type="text" placeholder="Enter the subject" />
+            </Form.Group>
 
-              <Form.Group controlId="formSubject" className="mb-3">
-                <Form.Label>Subject</Form.Label>
-                <Form.Control type="text" placeholder="Enter the subject" />
-              </Form.Group>
+            <Form.Group controlId="formMessage" className="mb-3">
+              <Form.Label>Message</Form.Label>
+              <Form.Control
+                as="textarea"
+                rows={5}
+                placeholder="Enter your message"
+                required
+              />
+            </Form.Group>
 
-              <Form.Group controlId="formMessage" className="mb-3">
-                <Form.Label>Message</Form.Label>
-                <Form.Control
-                  as="textarea"
-                  rows={5}
-                  placeholder="Enter your message"
-                  required
-                />
-              </Form.Group>
-
-              <Button
-                type="submit"
-                style={{ backgroundColor: "#007bff", border: "none" }}
-              >
-                Send Message
-              </Button>
-            </Form>
-          </Col>
-        </Row>
-      </section>
-    </div>
+            <Button
+              type="submit"
+              style={{ backgroundColor: "#007bff", border: "none" }}
+            >
+              Send Message
+            </Button>
+          </Form>
+        </Col>
+      </Row>
+    </section>
   );
 };
 
