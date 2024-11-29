@@ -29,8 +29,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="container sectionClass mt-5 pt-3">
-      <h2 className="headingClass text-primary">Contact Us</h2>
+    <section className="container sectionClass mt-5 pt-2">
+      <h1 className="headingClass">Contact Us</h1>
       <Row>
         <Col md={4} className="mb-4">
           <Card style={contactCardStyle}>

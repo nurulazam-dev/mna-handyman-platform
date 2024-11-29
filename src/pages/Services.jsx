@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Row, Col, Card, Button } from "react-bootstrap";
 
 const ServicesPage = () => {
   // Total services data with images
@@ -126,15 +126,15 @@ const ServicesPage = () => {
     }, */
   ];
 
-  const [visibleServices, setVisibleServices] = useState(12);
+  const [visibleServices, setVisibleServices] = useState(8);
 
   const handleSeeMore = () => {
     setVisibleServices((prev) => Math.min(prev + 4, allServices.length));
   };
 
   return (
-    <Container style={{ padding: "60px 10px" }}>
-      <h2 className="headingClass text-primary mb-3">Our Services</h2>
+    <section className="container mt-5">
+      <h1 className="headingClass  mt-5 pt-2">Our Services</h1>
       <Row>
         {allServices.slice(0, visibleServices).map((service) => (
           <Col
@@ -158,13 +158,18 @@ const ServicesPage = () => {
                 src={service.image}
                 alt={service.title}
                 style={{
-                  borderRadius: "10px 10px 0 0",
-                  height: "180px",
+                  borderRadius: "4px 4px 0 0",
+                  height: "150px",
                   objectFit: "cover",
                 }}
               />
               <Card.Body>
-                <Card.Title style={{ fontSize: "1.25rem", fontWeight: "bold" }}>
+                <Card.Title
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                  }}
+                >
                   {service.title}
                 </Card.Title>
                 <Card.Text style={{ fontSize: "0.9rem", color: "#6c757d" }}>
@@ -193,7 +198,7 @@ const ServicesPage = () => {
           </Button>
         </div>
       )}
-    </Container>
+    </section>
   );
 };
 

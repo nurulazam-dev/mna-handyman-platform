@@ -40,8 +40,8 @@ const Blog = () => {
   ];
 
   return (
-    <section className="container mt-5">
-      <h1 className="headingClass text-primary">Latest Blogs</h1>
+    <section className="container mt-5 pt-2">
+      <h1 className="headingClass ">Latest Blogs</h1>
       <Row>
         {blogs.map((blog) => (
           <Col md={6} lg={4} className="mb-4" key={blog.id}>
