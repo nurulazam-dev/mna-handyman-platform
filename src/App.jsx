@@ -11,6 +11,7 @@ import Register from "./pages/Register";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/services/:id" element={<ServiceDetails />} />
             <Route path="*" element={<NotFound />} />
