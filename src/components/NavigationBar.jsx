@@ -52,6 +52,9 @@ const NavigationBar = () => {
         <Navbar.Collapse id="navbar-content">
           <Nav className="mx-auto">
             {/* Center Navigation Links */}
+            <Nav.Link href="/" style={navLinkStyle}>
+              Home
+            </Nav.Link>
             <Nav.Link href="/services" style={navLinkStyle}>
               Services
             </Nav.Link>

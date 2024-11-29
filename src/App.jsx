@@ -19,6 +19,7 @@ function App() {
         <div className="py-4">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/services" element={<Services />} />
