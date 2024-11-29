@@ -1,4 +1,5 @@
 import { Form, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const pageStyle = {
@@ -6,13 +7,13 @@ const Register = () => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f8f9fa",
     padding: "20px",
+    margin: "10px 0 0 0",
   };
 
   const cardStyle = {
     width: "100%",
-    maxWidth: "900px",
+    maxWidth: "600px",
     backgroundColor: "#fff",
     borderRadius: "10px",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
@@ -48,28 +49,19 @@ const Register = () => {
   const inputStyle = {
     fontSize: "1rem",
     padding: "10px",
-    marginBottom: "20px",
+    marginBottom: "15px",
   };
 
   const buttonStyle = {
-    backgroundColor: "#007bff",
-    border: "none",
+    width: "100%",
     padding: "10px",
     fontSize: "1rem",
-    marginTop: "10px",
-    width: "100%",
-    borderRadius: "5px",
   };
 
   const linkStyle = {
     marginTop: "15px",
     fontSize: "0.9rem",
     color: "#6c757d",
-    textDecoration: "none",
-  };
-
-  const linkHoverStyle = {
-    textDecoration: "underline",
   };
 
   return (
@@ -124,22 +116,18 @@ const Register = () => {
             </Form.Group>
 
             {/* Register Button */}
-            <Button type="submit" style={buttonStyle}>
+            <Button type="submit" style={buttonStyle} className="customBtn">
               Register
             </Button>
           </Form>
 
           {/* Links */}
-          <a
-            href="/login"
-            style={linkStyle}
-            onMouseOver={(e) =>
-              (e.target.style = { ...linkStyle, ...linkHoverStyle })
-            }
-            onMouseOut={(e) => (e.target.style = { ...linkStyle })}
-          >
-            Already have an account? Login here.
-          </a>
+          <div style={linkStyle}>
+            Already have an account?{" "}
+            <Link to="/login" className="text-decoration-none">
+              <small className="text-primary">Login Here</small>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

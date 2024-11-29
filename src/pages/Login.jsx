@@ -7,7 +7,7 @@ const Login = () => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f8f9fa",
+
     padding: "20px",
   };
 
@@ -49,7 +49,7 @@ const Login = () => {
   const inputStyle = {
     fontSize: "1rem",
     padding: "10px",
-    marginBottom: "20px",
+    marginBottom: "15px",
   };
   const buttonStyle = {
     width: "100%",
