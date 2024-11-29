@@ -44,11 +44,11 @@ const Contact = () => {
             </div>
             <div className="mt-4">
               <FaMapMarkerAlt style={iconStyle} />
-              <p>Raozan, Chattogram, Bangladesh</p>
+              <p>Raozan, Chittagong, Bangladesh</p>
             </div>
             <div className="mt-4">
               <FaClock style={iconStyle} />
-              <p>SUN - THU: 9:00 AM - 5:00 PM</p>
+              <p>Sun - Thu : 10:00 AM - 6:00 PM</p>
             </div>
           </Card>
         </Col>

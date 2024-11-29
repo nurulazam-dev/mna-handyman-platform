@@ -44,6 +44,8 @@ const About = () => {
         </div>
       </div>
 
+      <MakesUsSpecial />
+
       {/* Mission and Vision Section */}
       <section className="container sectionClass text-center">
         <h1 className="headingClass">Our Mission & Vision</h1>
@@ -54,7 +56,6 @@ const About = () => {
         </p>
       </section>
 
-      <MakesUsSpecial />
       {/* Call to Action */}
       <section
         className="sectionClass "
