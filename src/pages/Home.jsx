@@ -2,6 +2,7 @@ import AboutUs from "../components/AboutUs";
 import ContactBookingForm from "../components/ContactBookingForm";
 import FAskedQuestions from "../components/FAskedQuestions";
 import Features from "../components/Features";
+import GoogleMap from "../components/GoogleMap";
 import Hero from "../components/Hero";
 import HowItWorks from "../components/HowItWorks";
 import MakesUsSpecial from "../components/MakesUsSpecial";
@@ -24,6 +25,7 @@ const Home = () => {
       <SpecialOffers />
       <FAskedQuestions />
       <Testimonials />
+      <GoogleMap />
     </>
   );
 };
