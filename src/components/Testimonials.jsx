@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useRef } from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Testimonials = () => {
   const cardStyle = {
@@ -118,11 +119,12 @@ const Testimonials = () => {
         ))}
       </Slider>
       <div style={{ textAlign: "center", marginTop: "30px" }}>
-        <Button className="mx-1" onClick={previous}>
-          Previous
+        <Button className="secondCustomBtn mx-1" onClick={previous}>
+          <FaArrowLeft /> Previous
         </Button>
-        <Button className="mx-1" onClick={next}>
+        <Button className="secondCustomBtn mx-1" onClick={next}>
           Next
+          <FaArrowRight className="ms-1" />
         </Button>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { Form, Button } from "react-bootstrap";
+import { FiLogIn } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 const Register = () => {
@@ -55,7 +56,7 @@ const Register = () => {
   const buttonStyle = {
     width: "100%",
     padding: "10px",
-    fontSize: "1rem",
+    fontSize: "1.1rem",
   };
 
   const linkStyle = {
@@ -116,8 +117,13 @@ const Register = () => {
             </Form.Group>
 
             {/* Register Button */}
-            <Button type="submit" style={buttonStyle} className="customBtn">
+            <Button
+              type="submit"
+              style={buttonStyle}
+              className="secondCustomBtn"
+            >
               Register
+              <FiLogIn className="ms-2" />
             </Button>
           </Form>
 

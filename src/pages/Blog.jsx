@@ -1,4 +1,5 @@
 import { Row, Col, Card, Button } from "react-bootstrap";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const Blog = () => {
   const blogs = [
@@ -83,16 +84,15 @@ const Blog = () => {
 
                 {/* Read More Button */}
                 <Button
-                  variant="primary"
+                  className="secondCustomBtn"
                   style={{
-                    backgroundColor: "#007bff",
-                    border: "none",
                     width: "100%",
                     padding: "10px",
                     borderRadius: "5px",
                   }}
                 >
                   Read More
+                  <FaArrowUpRightFromSquare className="ms-2" />
                 </Button>
               </Card.Body>
             </Card>

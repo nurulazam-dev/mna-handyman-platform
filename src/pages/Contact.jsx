@@ -1,4 +1,5 @@
 import { Row, Col, Form, Button, Card } from "react-bootstrap";
+import { BsFillSendFill } from "react-icons/bs";
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -95,11 +96,8 @@ const Contact = () => {
               />
             </Form.Group>
 
-            <Button
-              type="submit"
-              style={{ backgroundColor: "#007bff", border: "none" }}
-            >
-              Send Message
+            <Button className="secondCustomBtn" type="submit">
+              Send Message <BsFillSendFill className="ms-1" />
             </Button>
           </Form>
         </Col>

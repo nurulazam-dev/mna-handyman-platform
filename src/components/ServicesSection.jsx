@@ -3,6 +3,8 @@ import { Card, Button, Row, Col } from "react-bootstrap";
 import s1 from "../assets/images/service-1.jpg";
 import s2 from "../assets/images/service-2.jpg";
 import s3 from "../assets/images/service-3.jpg";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
 
 const ServicesSection = () => {
   const imgStyle = {
@@ -43,7 +45,10 @@ const ServicesSection = () => {
                 <Card.Title>{service.title}</Card.Title>
                 <Card.Text>{service.description}</Card.Text>
                 <Link to={`/services/${service.id}`}>
-                  <Button className="secondCustomBtn">Learn More</Button>
+                  <Button className="secondCustomBtn">
+                    Learn More
+                    <FaArrowRight className="ms-1" />
+                  </Button>
                 </Link>
               </Card.Body>
             </Card>
@@ -58,8 +63,8 @@ const ServicesSection = () => {
           textDecoration: "none",
         }}
       >
-        <Button className="customBtn mt-4" style={{ width: "25%" }}>
-          See Our All Services
+        <Button className="secondCustomBtn mt-4" style={{ width: "25%" }}>
+          See Our All Services <FaArrowUpRightFromSquare className="ms-1" />
         </Button>
       </Link>
     </section>

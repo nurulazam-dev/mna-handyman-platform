@@ -1,4 +1,5 @@
 import { Row, Col, Button } from "react-bootstrap";
+import { FaArrowRight } from "react-icons/fa";
 
 const AboutUs = () => {
   const textStyle = {
@@ -33,8 +34,8 @@ const AboutUs = () => {
             and businesses alike. From plumbing to carpentry, we handle it all
             with care and precision.
           </p>
-          <Button className="customBtn" href="/contact">
-            Get in Touch
+          <Button className="secondCustomBtn" href="/contact">
+            Get in Touch <FaArrowRight className="ms-1" />
           </Button>
         </Col>
 

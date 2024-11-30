@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Row, Col, Card, Button } from "react-bootstrap";
-import { FaClock, FaTag, FaGift } from "react-icons/fa";
+import { FaClock, FaTag, FaGift, FaArrowRight } from "react-icons/fa";
 
 const SpecialOffers = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -142,7 +142,10 @@ const SpecialOffers = () => {
                 Refer a friend and both of you receive $15 off your next
                 service. It&apos,s a win-win!
               </Card.Text>
-              <Button className="customBtn">Refer Now</Button>
+              <Button className="secondCustomBtn">
+                Refer Now
+                <FaArrowRight className="ms-1" />
+              </Button>
             </Card.Body>
           </Card>
         </Col>
