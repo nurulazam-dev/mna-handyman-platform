@@ -1,4 +1,4 @@
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, Col } from "react-bootstrap";
 
 const ResetPassword = () => {
   const pageStyle = {
@@ -6,8 +6,6 @@ const ResetPassword = () => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f8f9fa",
-    padding: "20px",
   };
 
   const cardStyle = {
@@ -16,15 +14,8 @@ const ResetPassword = () => {
     backgroundColor: "#fff",
     borderRadius: "10px",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-    padding: "30px",
+    padding: "20px 30px",
     textAlign: "center",
-  };
-
-  const titleStyle = {
-    fontSize: "2rem",
-    fontWeight: "bold",
-    marginBottom: "20px",
-    color: "#007bff",
   };
 
   const inputStyle = {
@@ -33,28 +24,14 @@ const ResetPassword = () => {
     marginBottom: "20px",
   };
 
-  const buttonStyle = {
-    backgroundColor: "#007bff",
-    border: "none",
-    padding: "10px",
-    fontSize: "1rem",
-    marginTop: "10px",
-    width: "100%",
-    borderRadius: "5px",
-  };
-
   return (
-    <div style={pageStyle}>
+    <section style={pageStyle}>
       <div style={cardStyle}>
-        <h2 style={titleStyle}>Reset Password</h2>
-        <p>
-          Enter your email address below, and we’ll send you a link to reset
-          your password.
-        </p>
+        <h1 className="headingClass">Reset Password</h1>
 
         <Form>
           {/* Email Input */}
-          <Form.Group controlId="formEmail">
+          <Form.Group className="text-start" controlId="formEmail">
             <Form.Label>Email Address</Form.Label>
             <Form.Control
               type="email"
@@ -65,45 +42,54 @@ const ResetPassword = () => {
           </Form.Group>
 
           {/* Reset Password Button */}
-          <Button type="submit" style={buttonStyle}>
+          <Button
+            type="submit"
+            className="secondCustomBtn"
+            style={{ width: "100%", padding: "10px 0" }}
+          >
             Send Reset Link
           </Button>
         </Form>
 
-        <hr className="my-4" />
-
-        <p>If you already have a reset token, set your new password below:</p>
-
         <Form>
-          {/* New Password Input */}
-          <Form.Group controlId="formNewPassword">
-            <Form.Label>New Password</Form.Label>
-            <Form.Control
-              type="password"
-              placeholder="Enter your new password"
-              style={inputStyle}
-              required
-            />
-          </Form.Group>
+          <div className="d-flex justify-content-between mt-4">
+            <Col md={6} className="me-1">
+              <Form.Group className="text-start" controlId="formNewPassword">
+                <Form.Label>New Password</Form.Label>
+                <Form.Control
+                  type="password"
+                  placeholder="Enter new password"
+                  style={inputStyle}
+                  required
+                />
+              </Form.Group>
+            </Col>
+            <Col md={6}>
+              <Form.Group
+                controlId="formConfirmPassword"
+                className="text-start"
+              >
+                <Form.Label>Confirm New Password</Form.Label>
+                <Form.Control
+                  type="password"
+                  placeholder="Confirm new password"
+                  style={inputStyle}
+                  required
+                />
+              </Form.Group>
+            </Col>
+          </div>
 
-          {/* Confirm New Password Input */}
-          <Form.Group controlId="formConfirmPassword">
-            <Form.Label>Confirm New Password</Form.Label>
-            <Form.Control
-              type="password"
-              placeholder="Confirm your new password"
-              style={inputStyle}
-              required
-            />
-          </Form.Group>
-
-          {/* Set New Password Button */}
-          <Button type="submit" style={buttonStyle}>
+          <Button
+            type="submit"
+            className="secondCustomBtn"
+            style={{ width: "100%", padding: "10px 0" }}
+          >
             Set New Password
           </Button>
         </Form>
       </div>
-    </div>
+    </section>
   );
 };
 
