@@ -31,7 +31,6 @@
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  /* background-color: rgb(35, 69, 236); */
   background-color: blue;
   color: white;
   cursor: pointer;
@@ -39,9 +38,25 @@
 }
 
 .customBtn:hover {
-  /* background-color: rgb(36, 2, 173); */
   background-color: #fff;
   color: black;
+}
+
+.secondCustomBtn {
+  border-radius: 6px;
+  border: 1px solid #2832f5;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #fff;
+  color: #2832f5;
+  cursor: pointer;
+}
+
+.secondCustomBtn:hover {
+  background-color: blue;
+  color: white;
 }
 
 /* @media (prefers-color-scheme: light) {

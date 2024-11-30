@@ -43,7 +43,7 @@ const ServicesSection = () => {
                 <Card.Title>{service.title}</Card.Title>
                 <Card.Text>{service.description}</Card.Text>
                 <Link to={`/services/${service.id}`}>
-                  <Button className="customBtn">Learn More</Button>
+                  <Button className="secondCustomBtn">Learn More</Button>
                 </Link>
               </Card.Body>
             </Card>
