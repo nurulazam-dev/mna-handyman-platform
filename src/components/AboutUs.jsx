@@ -20,7 +20,7 @@ const AboutUs = () => {
       <h1 className="headingClass">About Us</h1>
 
       <Row className="align-items-center">
-        <Col md={6} className="mb-4">
+        <Col md={6}>
           <p style={textStyle}>
             HandyMan Services has been providing top-notch repair and
             maintenance solutions since 2010. Our mission is to simplify home
