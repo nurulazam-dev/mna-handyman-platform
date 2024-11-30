@@ -65,6 +65,33 @@ const SpecialOffers = () => {
     color: "#d9534f",
   };
 
+  const offerData = [
+    {
+      id: 1,
+      title: "25% Off All Services",
+      description:
+        "Enjoy a 25% discount on all handyman services until the end of the month!",
+      icon: <FaTag style={iconStyle} className="me-2" />,
+      btnText: "Claim Offer",
+    },
+    {
+      id: 2,
+      title: "First-Time Customer Bonus",
+      description:
+        "New customers get a $20 voucher for their first booking. Use it for any of our services!",
+      icon: <FaGift style={iconStyle} className="me-2" />,
+      btnText: "Get Started",
+    },
+    {
+      id: 3,
+      title: "Referral Rewards",
+      description:
+        "Refer a friend and both of you receive $15 off your next service. It&apos,s a win-win!",
+      icon: <FaTag style={iconStyle} className="me-2" />,
+      btnText: "Refer Now",
+    },
+  ];
+
   return (
     <section className="container sectionClass">
       <h1 className="headingClass">Special Offers & Promotions</h1>
@@ -81,74 +108,28 @@ const SpecialOffers = () => {
       </div>
 
       <Row>
-        {/* Offer 1 */}
-        <Col md={4}>
-          <Card style={cardStyle} className="offer-card">
-            <img
-              src="https://via.placeholder.com/400x200"
-              alt="Seasonal Discount"
-              style={cardImageStyle}
-            />
-            <Card.Body>
-              <div className="d-flex justify-content-center">
-                <FaTag style={iconStyle} className="me-2" />
-                <Card.Title>25% Off All Services</Card.Title>
-              </div>
-              <Card.Text>
-                Enjoy a 25% discount on all handyman services until the end of
-                the month!
-              </Card.Text>
-              <Button className="customBtn">Claim Offer</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        {/* Offer 2 */}
-        <Col md={4}>
-          <Card style={cardStyle} className="offer-card">
-            <img
-              src="https://via.placeholder.com/400x200"
-              alt="First-Time Customer"
-              style={cardImageStyle}
-            />
-            <Card.Body>
-              <div className="d-flex justify-content-center">
-                <FaGift style={iconStyle} className="me-2" />
-                <Card.Title>First-Time Customer Bonus</Card.Title>
-              </div>
-              <Card.Text>
-                New customers get a $20 voucher for their first booking. Use it
-                for any of our services!
-              </Card.Text>
-              <Button className="customBtn">Get Started</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        {/* Offer 3 */}
-        <Col md={4}>
-          <Card style={cardStyle} className="offer-card">
-            <img
-              src="https://via.placeholder.com/400x200"
-              alt="Referral Bonus"
-              style={cardImageStyle}
-            />
-            <Card.Body>
-              <div className="d-flex justify-content-center">
-                <FaTag style={iconStyle} className="me-2" />
-                <Card.Title>Referral Rewards</Card.Title>
-              </div>
-              <Card.Text>
-                Refer a friend and both of you receive $15 off your next
-                service. It&apos,s a win-win!
-              </Card.Text>
-              <Button className="secondCustomBtn">
-                Refer Now
-                <FaArrowRight className="ms-1" />
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
+        {offerData.map((data) => (
+          <Col md={4} key={data?.id}>
+            <Card style={cardStyle} className="offer-card">
+              <img
+                src="https://via.placeholder.com/400x200"
+                alt="Seasonal Discount"
+                style={cardImageStyle}
+              />
+              <Card.Body>
+                <div className="d-flex justify-content-center">
+                  {data?.icon}
+                  <Card.Title>{data?.title}</Card.Title>
+                </div>
+                <Card.Text>{data?.description}</Card.Text>
+                <Button className="secondCustomBtn">
+                  {data?.btnText}
+                  <FaArrowRight className="ms-1" />
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
       </Row>
     </section>
   );
