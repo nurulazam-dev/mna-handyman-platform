@@ -113,7 +113,7 @@ const SpecialOffers = () => {
             <Card style={cardStyle} className="offer-card">
               <img
                 src="https://via.placeholder.com/400x200"
-                alt="Seasonal Discount"
+                alt={data?.title}
                 style={cardImageStyle}
               />
               <Card.Body>

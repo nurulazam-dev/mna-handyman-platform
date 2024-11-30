@@ -110,7 +110,7 @@ const Login = () => {
           {/* Links */}
           <div style={linkStyle}>
             Forgot your password?{" "}
-            <Link to="/forgot-password" className="text-decoration-none">
+            <Link to="/reset-password" className="text-decoration-none">
               <small className="text-primary">Reset Password</small>
             </Link>
           </div>
