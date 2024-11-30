@@ -73,7 +73,7 @@ const Register = () => {
 
         {/* Form Section */}
         <div style={formSectionStyle}>
-          <h2 style={titleStyle}>Create Your Account</h2>
+          <h2 style={titleStyle}>Create Account</h2>
 
           <Form>
             {/* Full Name */}
