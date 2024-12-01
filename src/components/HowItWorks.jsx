@@ -8,10 +8,6 @@ const HowItWorks = () => {
     transition: "all 0.3s ease-in-out",
   };
 
-  const cardHoverStyle = {
-    transform: "translateY(-5px)",
-  };
-
   const iconStyle = {
     color: "#007bff",
     marginBottom: "15px",
@@ -24,14 +20,7 @@ const HowItWorks = () => {
       <Row>
         {/* Step 1 */}
         <Col md={4}>
-          <Card
-            className="h-100"
-            style={cardStyle}
-            onMouseOver={(e) =>
-              (e.currentTarget.style = { ...cardStyle, ...cardHoverStyle })
-            }
-            onMouseOut={(e) => (e.currentTarget.style = { ...cardStyle })}
-          >
+          <Card className="h-100" style={cardStyle}>
             <Card.Body className="text-center">
               <FaClipboardList size={50} style={iconStyle} />
               <Card.Title>Select a Service</Card.Title>
@@ -45,14 +34,7 @@ const HowItWorks = () => {
 
         {/* Step 2 */}
         <Col md={4}>
-          <Card
-            className="h-100"
-            style={cardStyle}
-            onMouseOver={(e) =>
-              (e.currentTarget.style = { ...cardStyle, ...cardHoverStyle })
-            }
-            onMouseOut={(e) => (e.currentTarget.style = { ...cardStyle })}
-          >
+          <Card className="h-100" style={cardStyle}>
             <Card.Body className="text-center">
               <FaCalendarAlt size={50} style={iconStyle} />
               <Card.Title>Choose a Schedule</Card.Title>
@@ -65,14 +47,7 @@ const HowItWorks = () => {
 
         {/* Step 3 */}
         <Col md={4}>
-          <Card
-            className="h-100"
-            style={cardStyle}
-            onMouseOver={(e) =>
-              (e.currentTarget.style = { ...cardStyle, ...cardHoverStyle })
-            }
-            onMouseOut={(e) => (e.currentTarget.style = { ...cardStyle })}
-          >
+          <Card className="h-100" style={cardStyle}>
             <Card.Body className="text-center">
               <FaCheckCircle size={50} style={iconStyle} />
               <Card.Title>Get the Job Done</Card.Title>

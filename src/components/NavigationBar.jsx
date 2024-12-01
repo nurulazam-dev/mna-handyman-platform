@@ -26,10 +26,6 @@ const NavigationBar = () => {
     textDecoration: "none",
   };
 
-  const buttonStyle = {
-    marginLeft: "10px",
-  };
-
   return (
     <Navbar
       expand="lg"
@@ -74,7 +70,6 @@ const NavigationBar = () => {
             {/* Dark/Light Mode Toggle */}
             <Button
               variant={darkMode ? "light" : "dark"}
-              className="me-2"
               onClick={toggleDarkMode}
             >
               {darkMode ? <FaSun /> : <FaMoon />}
@@ -84,18 +79,13 @@ const NavigationBar = () => {
             <Link to="/login">
               <Button
                 variant={darkMode ? "outline-light" : "outline-primary"}
-                style={buttonStyle}
+                className="mx-3"
               >
                 Login
               </Button>
             </Link>
             <Link to="/register">
-              <Button
-                variant={darkMode ? "light" : "primary"}
-                style={buttonStyle}
-              >
-                Sign Up
-              </Button>
+              <Button variant={darkMode ? "light" : "primary"}>Sign Up</Button>
             </Link>
           </div>
         </Navbar.Collapse>

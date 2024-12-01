@@ -6,4 +6,4 @@
 
 ---
 
-Built using `React.js`, `React Router DOM`, `React Bootstrap`,`React Slick`,and `React Icons`
+Built using `React.js`, `React Router DOM`, `React Bootstrap`, `React Slick`,and `React Icons`.
