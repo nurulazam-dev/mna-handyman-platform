@@ -29,29 +29,6 @@ const OurSpecialists = () => {
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
   };
 
-  const nameStyle = {
-    fontWeight: "bold",
-    fontSize: "1.2rem",
-    marginBottom: "5px",
-  };
-
-  const roleStyle = {
-    fontSize: "1rem",
-    color: "#6c757d",
-    marginBottom: "8px",
-  };
-
-  const descriptionStyle = {
-    fontSize: "15px",
-  };
-
-  const socialIconsStyle = {
-    display: "flex",
-    justifyContent: "center",
-    gap: "10px",
-    marginTop: "15px",
-  };
-
   const socialIconStyle = {
     color: "#007bff",
     fontSize: "1.5rem",
@@ -116,13 +93,13 @@ const OurSpecialists = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024, // Tablet
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 768, // Mobile
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
         },
@@ -143,14 +120,35 @@ const OurSpecialists = () => {
                 style={avatarStyle}
               />
               <Card.Body>
-                <Card.Title style={nameStyle}>{specialist.name}</Card.Title>
-                <Card.Subtitle style={roleStyle}>
+                <Card.Title
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "1.2rem",
+                    marginBottom: "5px",
+                  }}
+                >
+                  {specialist.name}
+                </Card.Title>
+                <Card.Subtitle
+                  style={{
+                    fontSize: "1rem",
+                    color: "#6c757d",
+                    marginBottom: "8px",
+                  }}
+                >
                   {specialist.role}
                 </Card.Subtitle>
-                <Card.Text style={descriptionStyle}>
+                <Card.Text style={{ fontSize: "15px" }}>
                   {specialist.description}
                 </Card.Text>
-                <div style={socialIconsStyle}>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    gap: "10px",
+                    marginTop: "15px",
+                  }}
+                >
                   <a
                     href={specialist.social.facebook}
                     target="_blank"
