@@ -37,18 +37,14 @@ const NavigationBar = () => {
       fixed="top"
     >
       <Container>
-        {/* Logo Section */}
         <Navbar.Brand href="/" style={logoStyle}>
           HandyMan
         </Navbar.Brand>
 
-        {/* Toggle Button for Mobile */}
         <Navbar.Toggle aria-controls="navbar-content" />
 
-        {/* Navigation Links and Buttons */}
         <Navbar.Collapse id="navbar-content">
           <Nav className="mx-auto">
-            {/* Center Navigation Links */}
             <Nav.Link href="/" style={navLinkStyle}>
               Home
             </Nav.Link>
@@ -66,9 +62,7 @@ const NavigationBar = () => {
             </Nav.Link>
           </Nav>
 
-          {/* Theme Toggle and Login/Sign Up Buttons */}
           <div className="d-flex align-items-center">
-            {/* Dark/Light Mode Toggle */}
             <Button
               variant={darkMode ? "light" : "dark"}
               onClick={toggleDarkMode}
@@ -76,7 +70,6 @@ const NavigationBar = () => {
               {darkMode ? <FaSun /> : <FaMoon />}
             </Button>
 
-            {/* Login and Sign Up Buttons */}
             <Link to="/login">
               <Button
                 variant={darkMode ? "outline-light" : "outline-primary"}
