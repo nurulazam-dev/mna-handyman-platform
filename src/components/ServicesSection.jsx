@@ -7,11 +7,6 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 
 const ServicesSection = () => {
-  const imgStyle = {
-    height: "200px",
-    width: "300px",
-  };
-
   const services = [
     {
       id: 1,
@@ -40,7 +35,11 @@ const ServicesSection = () => {
         {services.map((service) => (
           <Col key={service.id} sm={12} md={6} lg={4}>
             <Card>
-              <Card.Img style={imgStyle} variant="top" src={service.img} />
+              <Card.Img
+                style={{ height: "200px", width: "300px" }}
+                variant="top"
+                src={service.img}
+              />
               <Card.Body>
                 <Card.Title>{service.title}</Card.Title>
                 <Card.Text>{service.description}</Card.Text>
