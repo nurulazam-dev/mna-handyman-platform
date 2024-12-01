@@ -32,6 +32,7 @@ const NavigationBar = () => {
       style={{
         backgroundColor: darkMode ? "#343a40" : "#fff",
         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+        padding: "0",
       }}
       fixed="top"
     >
