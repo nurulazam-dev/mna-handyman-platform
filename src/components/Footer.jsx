@@ -14,7 +14,7 @@ const Footer = () => {
       <Row className="px-5 pt-4">
         {/* About Section */}
         <Col md={4}>
-          <h5 className="text-warning">About HandyMan Services</h5>
+          <h5 className="text-warning">About MNA HandyMan Services</h5>
           <p>
             We provide top-notch handyman and repair services, ensuring your
             home and office are always in perfect shape.
@@ -78,7 +78,7 @@ const Footer = () => {
         <Col md={4}>
           <h5 className="text-warning">Contact Us</h5>
           <p className="m-0">
-            <FaEnvelope className="me-2" /> info@handymanservices.com
+            <FaEnvelope className="me-2" /> info@mnahandyman.com
           </p>
           <p className="m-0">
             <FaPhone className="me-2" /> +88 01712 345678
@@ -104,7 +104,7 @@ const Footer = () => {
       <Row className="py-1">
         <Col className="text-center">
           <small className="text-warning mb-0">
-            &copy; {new Date().getFullYear()} HandyMan Services. All Rights
+            &copy; {new Date().getFullYear()} MNA HandyMan Services. All Rights
             Reserved.
           </small>
         </Col>

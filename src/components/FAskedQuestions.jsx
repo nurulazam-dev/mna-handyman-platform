@@ -1,13 +1,7 @@
 import { Accordion, Col, Row } from "react-bootstrap";
+import { FaQuora } from "react-icons/fa";
 
 const FAskedQuestions = () => {
-  const teamImageStyle = {
-    borderRadius: "5px",
-    width: "100%",
-    height: "auto",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-  };
-
   const faqData = [
     {
       id: 1,
@@ -40,11 +34,20 @@ const FAskedQuestions = () => {
       <h1 className="headingClass">Frequently Asked Questions</h1>
 
       <Row className="d-flex justify-content-center">
-        <Col style={{ width: "40%" }}>
-          <img
+        <Col className="text-center" style={{ width: "40%" }}>
+          {/* <img
             src="https://via.placeholder.com/600x400"
             alt="HandyMan Team"
             style={teamImageStyle}
+          /> */}
+          <FaQuora
+            style={{
+              borderRadius: "5px",
+              // width: "100%",
+              // height: "auto",
+              // boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              fontSize: "350px",
+            }}
           />
         </Col>
 
