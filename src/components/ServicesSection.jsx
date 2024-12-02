@@ -54,18 +54,23 @@ const ServicesSection = () => {
           </Col>
         ))}
       </Row>
-      <Link
-        to="/services"
+      <div
         style={{
           display: "flex",
           justifyContent: "center",
-          textDecoration: "none",
         }}
       >
-        <Button className="secondCustomBtn mt-4" style={{ width: "25%" }}>
+        <Link
+          to="/services"
+          className="secondCustomBtn mt-4 text-center"
+          style={{
+            textDecoration: "none",
+            width: "25%",
+          }}
+        >
           See Our All Services <FaArrowUpRightFromSquare className="ms-1" />
-        </Button>
-      </Link>
+        </Link>
+      </div>
     </section>
   );
 };

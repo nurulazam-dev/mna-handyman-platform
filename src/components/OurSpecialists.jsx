@@ -3,6 +3,10 @@ import { Card } from "react-bootstrap";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import speImg1 from "../assets/images/6.png";
+import speImg2 from "../assets/images/9.png";
+import speImg3 from "../assets/images/8.png";
+import speImg4 from "../assets/images/7.png";
 
 const OurSpecialists = () => {
   const cardStyle = {
@@ -40,7 +44,7 @@ const OurSpecialists = () => {
       name: "John Smith",
       role: "Plumbing Specialist",
       description: "Expert in pipe installations, repairs, and leak fixing.",
-      image: "https://via.placeholder.com/100",
+      image: speImg1,
       social: {
         facebook: "#",
         twitter: "#",
@@ -52,7 +56,7 @@ const OurSpecialists = () => {
       role: "Electrical Engineer",
       description:
         "Specialist in wiring, circuit repairs, and energy solutions.",
-      image: "https://via.placeholder.com/100",
+      image: speImg2,
       social: {
         facebook: "#",
         twitter: "#",
@@ -63,7 +67,7 @@ const OurSpecialists = () => {
       name: "Michael Brown",
       role: "Carpentry Expert",
       description: "Crafts custom furniture and repairs wooden fixtures.",
-      image: "https://via.placeholder.com/100",
+      image: speImg3,
       social: {
         facebook: "#",
         twitter: "#",
@@ -74,7 +78,7 @@ const OurSpecialists = () => {
       name: "Emily Davis",
       role: "Cleaning Professional",
       description: "Specializes in deep cleaning and sanitization services.",
-      image: "https://via.placeholder.com/100",
+      image: speImg4,
       social: {
         facebook: "#",
         twitter: "#",
