@@ -12,13 +12,6 @@ const NavigationBar = () => {
     document.body.style.color = darkMode ? "#212529" : "#f8f9fa";
   };
 
-  const logoStyle = {
-    fontSize: "1.8rem",
-    fontWeight: "bold",
-    color: darkMode ? "#fff" : "#007bff",
-    textDecoration: "none",
-  };
-
   const navLinkStyle = {
     fontSize: "1.1rem",
     margin: "0 15px",
@@ -37,7 +30,15 @@ const NavigationBar = () => {
       fixed="top"
     >
       <Container>
-        <Navbar.Brand href="/" style={logoStyle}>
+        <Navbar.Brand
+          href="/"
+          style={{
+            fontSize: "1.8rem",
+            fontWeight: "bold",
+            color: darkMode ? "#fff" : "#007bff",
+            textDecoration: "none",
+          }}
+        >
           HandyMan
         </Navbar.Brand>
 
