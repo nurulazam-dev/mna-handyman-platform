@@ -1,13 +1,14 @@
 import { useState } from "react";
-import { Row, Col, Card, Button } from "react-bootstrap";
+import { Row, Col, Card } from "react-bootstrap";
 import serImg1 from "../assets/images/6.png";
 import serImg2 from "../assets/images/10.png";
 import serImg3 from "../assets/images/8.png";
 import serImg4 from "../assets/images/5.png";
 import serImg5 from "../assets/images/7.png";
 import serImg6 from "../assets/images/9.png";
+import { MdOutlineExpandMore } from "react-icons/md";
 
-const ServicesPage = () => {
+const Services = () => {
   const allServices = [
     {
       id: 1,
@@ -126,7 +127,7 @@ const ServicesPage = () => {
   };
 
   return (
-    <section className="container mt-5">
+    <section className="container  mt-5">
       <h1 className="headingClass  mt-5 pt-2">Our Services</h1>
       <Row>
         {allServices.slice(0, visibleServices).map((service) => (
@@ -176,23 +177,27 @@ const ServicesPage = () => {
 
       {/* See More Button */}
       {visibleServices < allServices.length && (
-        <div className="text-center mt-4">
-          <Button
+        <div
+          className="mt-1"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <button
             onClick={handleSeeMore}
+            className="secondCustomBtn text-center"
             style={{
-              backgroundColor: "#007bff",
-              border: "none",
-              padding: "8px 20px",
-              fontSize: "1rem",
-              borderRadius: "5px",
+              textDecoration: "none",
+              width: "25%",
             }}
           >
-            See More
-          </Button>
+            See More <MdOutlineExpandMore style={{ fontSize: "1.5rem" }} />
+          </button>
         </div>
       )}
     </section>
   );
 };
 
-export default ServicesPage;
+export default Services;

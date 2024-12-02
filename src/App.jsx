@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import NavigationBar from "./components/NavigationBar";
 
 import "./App.css";
-import ServiceDetails from "./pages/ServiceDetails";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -30,7 +29,6 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/reset-password" element={<ResetPassword />} />
-            <Route path="/services/:id" element={<ServiceDetails />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
