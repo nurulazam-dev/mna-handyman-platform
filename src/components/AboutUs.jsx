@@ -1,5 +1,6 @@
 import { Row, Col, Button } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";
+import logo from "../assets/images/brandLogo.png";
 
 const AboutUs = () => {
   const textStyle = {
@@ -9,13 +10,6 @@ const AboutUs = () => {
     marginBottom: "20px",
   };
 
-  const teamImageStyle = {
-    borderRadius: "10px",
-    width: "100%",
-    height: "auto",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-  };
-
   return (
     <section className="container sectionClass">
       <h1 className="headingClass">About Us</h1>
@@ -23,7 +17,7 @@ const AboutUs = () => {
       <Row className="align-items-center">
         <Col md={6}>
           <p style={textStyle}>
-            HandyMan Services has been providing top-notch repair and
+            MNA HandyMan Services has been providing top-notch repair and
             maintenance solutions since 2010. Our mission is to simplify home
             repairs and ensure our clients receive the highest quality of
             service, on time and on budget.
@@ -41,9 +35,14 @@ const AboutUs = () => {
 
         <Col md={6}>
           <img
-            src="https://via.placeholder.com/600x400"
-            alt="HandyMan Team"
-            style={teamImageStyle}
+            src={logo}
+            alt="MNA HandyMan"
+            style={{
+              borderRadius: "10px",
+              width: "100%",
+              height: "auto",
+              // boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            }}
           />
         </Col>
       </Row>
