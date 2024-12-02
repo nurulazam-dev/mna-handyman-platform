@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import brandLogo from "../assets/images/brandLogo.png";
 
 const NavigationBar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -30,16 +31,8 @@ const NavigationBar = () => {
       fixed="top"
     >
       <Container>
-        <Navbar.Brand
-          href="/"
-          style={{
-            fontSize: "1.8rem",
-            fontWeight: "bold",
-            color: darkMode ? "#fff" : "#007bff",
-            textDecoration: "none",
-          }}
-        >
-          HandyMan
+        <Navbar.Brand href="/">
+          <img src={brandLogo} alt="" style={{ width: "65px" }} />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-content" />
