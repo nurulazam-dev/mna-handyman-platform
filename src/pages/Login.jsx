@@ -1,6 +1,7 @@
 import { Form, Button } from "react-bootstrap";
 import { FiLogIn } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import bgImg from "../assets/images/login.png";
 
 const Login = () => {
   const pageStyle = {
@@ -14,7 +15,7 @@ const Login = () => {
 
   const cardStyle = {
     width: "100%",
-    maxWidth: "600px",
+    maxWidth: "750px",
     backgroundColor: "#fff",
     borderRadius: "10px",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
@@ -25,7 +26,7 @@ const Login = () => {
 
   const imageSectionStyle = {
     width: "50%",
-    backgroundImage: "url(https://via.placeholder.com/450x600)",
+    backgroundImage: `url(${bgImg})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     display: "none",

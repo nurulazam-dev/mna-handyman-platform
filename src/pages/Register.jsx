@@ -1,6 +1,7 @@
 import { Form, Button } from "react-bootstrap";
 import { FiLogIn } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import bgImg from "../assets/images/login.png";
 
 const Register = () => {
   const pageStyle = {
@@ -8,13 +9,11 @@ const Register = () => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    padding: "20px",
-    margin: "10px 0 0 0",
   };
 
   const cardStyle = {
     width: "100%",
-    maxWidth: "600px",
+    maxWidth: "750px",
     backgroundColor: "#fff",
     borderRadius: "10px",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
@@ -25,14 +24,14 @@ const Register = () => {
 
   const imageSectionStyle = {
     width: "50%",
-    backgroundImage: "url(https://via.placeholder.com/450x600)",
+    backgroundImage: `url(${bgImg})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     display: "none",
   };
 
   const formSectionStyle = {
-    padding: "40px",
+    padding: "30px 20px",
     width: "100%",
     display: "flex",
     flexDirection: "column",
@@ -68,15 +67,12 @@ const Register = () => {
   return (
     <div style={pageStyle}>
       <div style={cardStyle}>
-        {/* Image Section for Large Devices */}
         <div style={imageSectionStyle} className="d-none d-lg-block"></div>
 
-        {/* Form Section */}
         <div style={formSectionStyle}>
           <h2 style={titleStyle}>Create Account</h2>
 
           <Form>
-            {/* Full Name */}
             <Form.Group controlId="formFullName">
               <Form.Control
                 type="text"
@@ -86,7 +82,6 @@ const Register = () => {
               />
             </Form.Group>
 
-            {/* Email */}
             <Form.Group controlId="formEmail">
               <Form.Control
                 type="email"
@@ -96,7 +91,6 @@ const Register = () => {
               />
             </Form.Group>
 
-            {/* Password */}
             <Form.Group controlId="formPassword">
               <Form.Control
                 type="password"
@@ -106,7 +100,6 @@ const Register = () => {
               />
             </Form.Group>
 
-            {/* Confirm Password */}
             <Form.Group controlId="formConfirmPassword">
               <Form.Control
                 type="password"
@@ -116,7 +109,6 @@ const Register = () => {
               />
             </Form.Group>
 
-            {/* Register Button */}
             <Button
               type="submit"
               style={buttonStyle}
@@ -127,7 +119,6 @@ const Register = () => {
             </Button>
           </Form>
 
-          {/* Links */}
           <div style={linkStyle}>
             Already have an account?{" "}
             <Link to="/login" className="text-decoration-none">
