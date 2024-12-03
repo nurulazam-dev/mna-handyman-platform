@@ -2,17 +2,18 @@ import { Button } from "react-bootstrap";
 import MakesUsSpecial from "../components/MakesUsSpecial";
 import OurSpecialists from "../components/OurSpecialists";
 import { Link } from "react-router-dom";
+import aboutImg from "../assets/images/aboutUs.jpg";
 
 const About = () => {
   const heroStyle = {
-    backgroundImage: "url(https://via.placeholder.com/1920x600)",
+    backgroundImage: `url(${aboutImg})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     color: "#fff",
     textAlign: "center",
     padding: "50px 20px",
     position: "relative",
-    margin: "40px 0 25px 0",
+    margin: "30px 0 25px 0",
   };
 
   const overlayStyle = {
@@ -69,9 +70,12 @@ const About = () => {
         <h2>Ready to Work With Us?</h2>
         <Link to="/services">
           <Button
-            variant="light"
             size="lg"
-            style={{ marginTop: "20px", marginRight: "15px" }}
+            style={{
+              border: "1px solid white",
+              marginTop: "20px",
+              marginRight: "15px",
+            }}
           >
             Our Services
           </Button>
