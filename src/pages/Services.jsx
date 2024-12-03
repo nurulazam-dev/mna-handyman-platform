@@ -153,7 +153,7 @@ const Services = () => {
                 alt={service.title}
                 style={{
                   borderRadius: "4px 4px 0 0",
-                  height: "150px",
+                  height: "200px",
                   objectFit: "cover",
                 }}
               />
