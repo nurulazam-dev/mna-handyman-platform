@@ -1,11 +1,18 @@
 import { useState } from "react";
 import { Row, Col, Card } from "react-bootstrap";
-import serImg1 from "../assets/images/6.png";
-import serImg2 from "../assets/images/10.png";
-import serImg3 from "../assets/images/8.png";
-import serImg4 from "../assets/images/5.png";
-import serImg5 from "../assets/images/7.png";
-import serImg6 from "../assets/images/9.png";
+import plumSerImg from "../assets/images/blog-2.jpg";
+import elcSerImg from "../assets/images/9.png";
+import carSerImg from "../assets/images/8.png";
+import cleSerImg from "../assets/images/blog-1.jpg";
+import painSerImg from "../assets/images/blog-3.jpg";
+import hvacSerImg from "../assets/images/9.png";
+import rooSerImg from "../assets/images/9.png";
+import landSerImg from "../assets/images/blog-4.jpg";
+import pestSerImg from "../assets/images/9.png";
+import furSerImg from "../assets/images/9.png";
+import apSerImg from "../assets/images/9.png";
+import floSerImg from "../assets/images/9.png";
+import fenSerImg from "../assets/images/9.png";
 import { MdOutlineExpandMore } from "react-icons/md";
 
 const Services = () => {
@@ -14,109 +21,85 @@ const Services = () => {
       id: 1,
       title: "Plumbing",
       description: "Expert plumbing solutions for your home.",
-      image: serImg1,
+      image: plumSerImg,
     },
     {
       id: 2,
       title: "Electrical Repair",
       description: "Reliable electrical services for safety.",
-      image: serImg6,
+      image: elcSerImg,
     },
     {
       id: 3,
       title: "Carpentry",
       description: "Professional carpentry for custom needs.",
-      image: serImg5,
+      image: carSerImg,
     },
     {
       id: 4,
       title: "Cleaning",
       description: "Efficient and thorough cleaning services.",
-      image: serImg4,
+      image: cleSerImg,
     },
     {
       id: 5,
       title: "Painting",
       description: "High-quality painting for interiors and exteriors.",
-      image: serImg3,
+      image: painSerImg,
     },
     {
       id: 6,
       title: "HVAC Services",
       description: "Heating and cooling system maintenance.",
-      image: serImg2,
+      image: hvacSerImg,
     },
     {
       id: 7,
       title: "Roofing",
       description: "Durable roofing and repair services.",
-      image: serImg1,
+      image: rooSerImg,
     },
     {
       id: 8,
       title: "Landscaping",
       description: "Beautiful landscaping for your garden.",
-      image: serImg2,
+      image: landSerImg,
     },
     {
       id: 9,
       title: "Pest Control",
       description: "Effective pest control solutions.",
-      image: serImg5,
+      image: pestSerImg,
     },
     {
       id: 10,
       title: "Furniture Assembly",
       description: "Quick and easy furniture assembly.",
-      image: serImg3,
+      image: furSerImg,
     },
     {
       id: 11,
       title: "Window Cleaning",
       description: "Sparkling windows, inside and out.",
-      image: serImg4,
+      image: cleSerImg,
     },
     {
       id: 12,
       title: "Appliance Repair",
       description: "Fast and reliable appliance repair.",
-      image: serImg2,
+      image: apSerImg,
     },
     {
       id: 13,
       title: "Flooring",
       description: "Expert flooring installation and repairs.",
-      image: serImg4,
+      image: floSerImg,
     },
     {
       id: 14,
       title: "Fencing",
       description: "Strong and secure fencing solutions.",
-      image: serImg2,
-    },
-    {
-      id: 15,
-      title: "Masonry",
-      description: "Quality masonry work for your home.",
-      image: serImg5,
-    },
-    {
-      id: 16,
-      title: "Interior Design",
-      description: "Creative and functional interior design.",
-      image: serImg1,
-    },
-    {
-      id: 17,
-      title: "Handyman Services",
-      description: "General handyman services for all needs.",
-      image: serImg2,
-    },
-    {
-      id: 18,
-      title: "Moving Help",
-      description: "Assistance with packing and moving.",
-      image: serImg3,
+      image: fenSerImg,
     },
   ];
 
