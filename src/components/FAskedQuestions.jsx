@@ -1,5 +1,4 @@
 import { Accordion, Col, Row } from "react-bootstrap";
-import { FaQuora } from "react-icons/fa";
 
 const FAskedQuestions = () => {
   const faqData = [
@@ -35,20 +34,16 @@ const FAskedQuestions = () => {
 
       <Row className="d-flex justify-content-center">
         <Col className="text-center" style={{ width: "40%" }}>
-          {/* <img
-            src="https://via.placeholder.com/600x400"
-            alt="HandyMan Team"
-            style={teamImageStyle}
-          /> */}
-          <FaQuora
-            style={{
-              borderRadius: "5px",
-              // width: "100%",
-              // height: "auto",
-              // boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-              fontSize: "350px",
-            }}
-          />
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/NmJ70_O-ARY?si=kve8O6zTmQYbc-w2"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </Col>
 
         <Col
