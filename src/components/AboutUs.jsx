@@ -1,6 +1,6 @@
 import { Row, Col, Button } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";
-import logo from "../assets/images/brandLogo.png";
+import logo from "../assets/images/logo.png";
 
 const AboutUs = () => {
   const textStyle = {

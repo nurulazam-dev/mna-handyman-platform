@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import brandLogo from "../assets/images/brandLogo.png";
+import brandLogo from "../assets/images/logo.png";
 
 const NavigationBar = () => {
   const [darkMode, setDarkMode] = useState(false);
