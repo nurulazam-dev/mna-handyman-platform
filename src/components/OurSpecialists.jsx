@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import speImg1 from "../assets/images/6.png";
 import speImg2 from "../assets/images/9.png";
 import speImg3 from "../assets/images/8.png";
-import speImg4 from "../assets/images/7.png";
+import speImg4 from "../assets/images/blog-1.jpg";
 
 const OurSpecialists = () => {
   const cardStyle = {

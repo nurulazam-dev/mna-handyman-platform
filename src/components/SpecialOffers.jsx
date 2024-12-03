@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import { FaClock, FaTag, FaGift, FaArrowRight } from "react-icons/fa";
+import offerImg1 from "../assets/images/offer-1.png";
+import offerImg2 from "../assets/images/offer-2.png";
+import offerImg3 from "../assets/images/offer-3.png";
 
 const SpecialOffers = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -73,6 +76,7 @@ const SpecialOffers = () => {
         "Enjoy a 25% discount on all handyman services until the end of the month!",
       icon: <FaTag style={iconStyle} className="me-2" />,
       btnText: "Claim Offer",
+      img: offerImg1,
     },
     {
       id: 2,
@@ -81,6 +85,7 @@ const SpecialOffers = () => {
         "New customers get a $20 voucher for their first booking. Use it for any of our services!",
       icon: <FaGift style={iconStyle} className="me-2" />,
       btnText: "Get Started",
+      img: offerImg2,
     },
     {
       id: 3,
@@ -89,6 +94,7 @@ const SpecialOffers = () => {
         "Refer a friend and both of you receive $15 off your next service. It&apos,s a win-win!",
       icon: <FaTag style={iconStyle} className="me-2" />,
       btnText: "Refer Now",
+      img: offerImg3,
     },
   ];
 
@@ -111,11 +117,7 @@ const SpecialOffers = () => {
         {offerData.map((data) => (
           <Col md={4} key={data?.id}>
             <Card style={cardStyle} className="offer-card">
-              <img
-                src="https://via.placeholder.com/400x200"
-                alt={data?.title}
-                style={cardImageStyle}
-              />
+              <img src={data?.img} alt={data?.title} style={cardImageStyle} />
               <Card.Body>
                 <div className="d-flex justify-content-center">
                   {data?.icon}
