@@ -9,8 +9,6 @@ const Login = () => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-
-    padding: "20px",
   };
 
   const cardStyle = {
@@ -33,7 +31,7 @@ const Login = () => {
   };
 
   const formSectionStyle = {
-    padding: "40px",
+    padding: "30px 20px",
     width: "100%",
     display: "flex",
     flexDirection: "column",
