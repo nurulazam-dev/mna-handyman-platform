@@ -34,7 +34,6 @@ const About = () => {
 
   return (
     <div>
-      {/* Hero Section */}
       <div style={heroStyle}>
         <div style={overlayStyle}></div>
         <div style={heroTextStyle}>
