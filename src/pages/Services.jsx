@@ -104,7 +104,7 @@ const Services = () => {
   };
 
   return (
-    <section className="container  mt-5">
+    <section className="container mt-4">
       <h1 className="headingClass  mt-5 pt-2">Our Services</h1>
       <Row>
         {allServices.slice(0, visibleServices).map((service) => (
