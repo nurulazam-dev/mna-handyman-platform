@@ -164,6 +164,7 @@ const Services = () => {
           <button
             onClick={handleSeeMore}
             className="secondCustomBtn text-center"
+            type="button"
             style={{
               textDecoration: "none",
               width: "25%",

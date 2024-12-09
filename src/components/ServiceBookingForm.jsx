@@ -1,7 +1,7 @@
 import { Form, Button, Row, Col } from "react-bootstrap";
 import { FaUser, FaWrench, FaCalendarAlt } from "react-icons/fa";
 
-const ContactBookingForm = () => {
+const ServiceBookingForm = () => {
   const formContainerStyle = {
     maxWidth: "900px",
     margin: "0 auto",
@@ -16,22 +16,12 @@ const ContactBookingForm = () => {
     marginRight: "10px",
   };
 
-  const submitButtonStyle = {
-    backgroundColor: "#007bff",
-    border: "none",
-    width: "100%",
-    padding: "12px",
-    fontSize: "1.2rem",
-    borderRadius: "5px",
-  };
-
   return (
     <section className="container sectionClass">
-      <h1 className="headingClass">Contact & Booking Form</h1>
+      <h1 className="headingClass">Service Booking</h1>
       <Form style={formContainerStyle}>
-        {/* Contact Information */}
         <h5 className="mb-3">
-          <FaUser style={iconStyle} /> Contact Information
+          <FaUser style={iconStyle} /> Information
         </h5>
         <Row>
           <Col md={6} className="mb-3">
@@ -75,7 +65,6 @@ const ContactBookingForm = () => {
           </Col>
         </Row>
 
-        {/* Service Details */}
         <h5 className="mt-4 mb-3">
           <FaWrench style={iconStyle} /> Service Details
         </h5>
@@ -133,9 +122,12 @@ const ContactBookingForm = () => {
           </Col>
         </Row>
 
-        {/* Submit Button */}
         <div className="text-center mt-4">
-          <Button type="submit" style={submitButtonStyle}>
+          <Button
+            type="button"
+            className="secondCustomBtn"
+            style={{ width: "100%", padding: "12px" }}
+          >
             Submit Request
           </Button>
         </div>
@@ -144,4 +136,4 @@ const ContactBookingForm = () => {
   );
 };
 
-export default ContactBookingForm;
+export default ServiceBookingForm;

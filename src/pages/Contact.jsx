@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="container sectionClass mt-5 pt-2">
+    <section className="container sectionClass mt-4 pt-2 mb-0">
       <h1 className="headingClass">Contact Us</h1>
       <Row>
         <Col md={4} className="mb-4">
