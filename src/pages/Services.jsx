@@ -2,17 +2,17 @@ import { useState } from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import plumSerImg from "../assets/images/blog-2.jpg";
 import elcSerImg from "../assets/images/9.png";
-import carSerImg from "../assets/images/8.png";
+import carSerImg from "../assets/images/carSerImg.jpeg";
 import cleSerImg from "../assets/images/blog-1.jpg";
+import winCleSerImg from "../assets/images/winCleSerImg.webp";
 import painSerImg from "../assets/images/blog-3.jpg";
-import hvacSerImg from "../assets/images/9.png";
-import rooSerImg from "../assets/images/9.png";
+import hvacSerImg from "../assets/images/hvacSerImg.avif";
+import rooSerImg from "../assets/images/rooSerImg.jpg";
 import landSerImg from "../assets/images/blog-4.jpg";
-import pestSerImg from "../assets/images/9.png";
-import furSerImg from "../assets/images/9.png";
-import apSerImg from "../assets/images/9.png";
-import floSerImg from "../assets/images/9.png";
-import fenSerImg from "../assets/images/9.png";
+import pestSerImg from "../assets/images/pestSerImg.webp";
+import furSerImg from "../assets/images/furSerImg.jpg";
+import apSerImg from "../assets/images/apSerImg.png";
+import floSerImg from "../assets/images/floSerImg.webp";
 import { MdOutlineExpandMore } from "react-icons/md";
 
 const Services = () => {
@@ -81,7 +81,7 @@ const Services = () => {
       id: 11,
       title: "Window Cleaning",
       description: "Sparkling windows, inside and out.",
-      image: cleSerImg,
+      image: winCleSerImg,
     },
     {
       id: 12,
@@ -94,12 +94,6 @@ const Services = () => {
       title: "Flooring",
       description: "Expert flooring installation and repairs.",
       image: floSerImg,
-    },
-    {
-      id: 14,
-      title: "Fencing",
-      description: "Strong and secure fencing solutions.",
-      image: fenSerImg,
     },
   ];
 
@@ -136,7 +130,7 @@ const Services = () => {
                 alt={service.title}
                 style={{
                   borderRadius: "4px 4px 0 0",
-                  height: "200px",
+                  height: "180px",
                   objectFit: "cover",
                 }}
               />
