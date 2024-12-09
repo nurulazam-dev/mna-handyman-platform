@@ -3,10 +3,7 @@ import { Card } from "react-bootstrap";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import speImg1 from "../assets/images/6.png";
-import speImg2 from "../assets/images/9.png";
-import speImg3 from "../assets/images/8.png";
-import speImg4 from "../assets/images/blog-1.jpg";
+import { specialistsData } from "../assets/data/data";
 
 const OurSpecialists = () => {
   const cardStyle = {
@@ -39,54 +36,6 @@ const OurSpecialists = () => {
     transition: "color 0.3s",
   };
 
-  const specialists = [
-    {
-      name: "John Smith",
-      role: "Plumbing Specialist",
-      description: "Expert in pipe installations, repairs, and leak fixing.",
-      image: speImg1,
-      social: {
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#",
-      },
-    },
-    {
-      name: "Sarah Johnson",
-      role: "Electrical Engineer",
-      description:
-        "Specialist in wiring, circuit repairs, and energy solutions.",
-      image: speImg2,
-      social: {
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#",
-      },
-    },
-    {
-      name: "Michael Brown",
-      role: "Carpentry Expert",
-      description: "Crafts custom furniture and repairs wooden fixtures.",
-      image: speImg3,
-      social: {
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#",
-      },
-    },
-    {
-      name: "Emily Davis",
-      role: "Cleaning Professional",
-      description: "Specializes in deep cleaning and sanitization services.",
-      image: speImg4,
-      social: {
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#",
-      },
-    },
-  ];
-
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -115,7 +64,7 @@ const OurSpecialists = () => {
     <section className="container sectionClass mb-5">
       <h2 className="headingClass">Meet Our Specialists</h2>
       <Slider {...sliderSettings}>
-        {specialists.map((specialist, index) => (
+        {specialistsData.map((specialist, index) => (
           <div key={index}>
             <Card style={cardStyle}>
               <img
