@@ -67,6 +67,7 @@ const Contact = () => {
                     type="text"
                     placeholder="Enter your full name"
                     required
+                    style={{ padding: "10px 15px" }}
                   />
                 </Form.Group>
               </Col>
@@ -77,22 +78,28 @@ const Contact = () => {
                     type="email"
                     placeholder="Enter your email"
                     required
+                    style={{ padding: "10px 15px" }}
                   />
                 </Form.Group>
               </Col>
             </div>
             <Form.Group controlId="formSubject" className="mb-3">
               <Form.Label>Subject</Form.Label>
-              <Form.Control type="text" placeholder="Enter the subject" />
+              <Form.Control
+                type="text"
+                placeholder="Enter the subject"
+                style={{ padding: "10px 15px" }}
+              />
             </Form.Group>
 
             <Form.Group controlId="formMessage" className="mb-3">
               <Form.Label>Message</Form.Label>
               <Form.Control
                 as="textarea"
-                rows={5}
+                rows={4}
                 placeholder="Enter your message"
                 required
+                style={{ padding: "10px 15px" }}
               />
             </Form.Group>
 
