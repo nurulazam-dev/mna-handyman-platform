@@ -1,3 +1,4 @@
+// services images
 import plumSerImg from "../images/blog-2.jpg";
 import elcSerImg from "../images/9.png";
 import carSerImg from "../images/carSerImg.jpeg";
@@ -12,14 +13,23 @@ import furSerImg from "../images/furSerImg.jpg";
 import apSerImg from "../images/apSerImg.png";
 import floSerImg from "../images/floSerImg.webp";
 
+// specialists images
 import speImg1 from "../images/6.png";
 import speImg2 from "../images/9.png";
 import speImg3 from "../images/8.png";
 import speImg4 from "../images/blog-1.jpg";
 
+// testimonial user images
 import customerImg1 from "../images/2.png";
 import customerImg2 from "../images/3.png";
 import customerImg3 from "../images/4.png";
+
+// blog images
+import blogImg1 from "../assets/images/blog-1.jpg";
+import blogImg2 from "../assets/images/blog-2.jpg";
+import blogImg3 from "../assets/images/blog-3.jpg";
+import blogImg4 from "../assets/images/blog-4.jpg";
+import blogImg5 from "../assets/images/blog-5.jpg";
 
 export const servicesData = [
   {
@@ -206,5 +216,43 @@ export const testimonialsData = [
     feedback:
       "Quick and reliable! I needed an urgent repair, and they came through without a hitch.",
     image: customerImg2,
+  },
+];
+
+export const blogData = [
+  {
+    id: 1,
+    title: "5 Tips for a Clean Home",
+    summary:
+      "Maintaining a clean home can seem overwhelming, but with these 5 practical tips, you can easily keep your living space tidy and organized. Learn how to establish a routine and prioritize tasks for a spotless home.",
+    image: blogImg1,
+  },
+  {
+    id: 2,
+    title: "DIY Plumbing Fixes",
+    summary:
+      "Tired of waiting for a plumber? Discover simple plumbing fixes you can handle on your own, from unclogging drains to fixing minor leaks. These tips will save you time and money while keeping your home functional.",
+    image: blogImg2,
+  },
+  {
+    id: 3,
+    title: "Choosing the Right Paint Colors",
+    summary:
+      "Picking the perfect paint colors for your home can set the tone for any room. Learn from experts about color psychology, matching shades to your decor, and achieving a professional look with ease.",
+    image: blogImg3,
+  },
+  {
+    id: 4,
+    title: "Benefits of Professional Landscaping",
+    summary:
+      "Transform your outdoor space with professional landscaping. Discover how experts can improve your garden’s aesthetics, boost property value, and create a sustainable and beautiful environment.",
+    image: blogImg4,
+  },
+  {
+    id: 5,
+    title: "How to Improve Energy Efficiency",
+    summary:
+      "Cut your energy bills and reduce your carbon footprint with these proven energy-saving techniques. Learn how to insulate your home, upgrade to energy-efficient appliances, and adopt simple daily habits.",
+    image: blogImg5,
   },
 ];
