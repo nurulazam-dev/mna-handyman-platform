@@ -31,6 +31,7 @@ const ServiceBookingForm = () => {
                 type="text"
                 placeholder="Enter your full name"
                 required
+                style={{ padding: "10px 15px" }}
               />
             </Form.Group>
           </Col>
@@ -41,6 +42,7 @@ const ServiceBookingForm = () => {
                 type="email"
                 placeholder="Enter your email"
                 required
+                style={{ padding: "10px 15px" }}
               />
             </Form.Group>
           </Col>
@@ -51,6 +53,7 @@ const ServiceBookingForm = () => {
                 type="tel"
                 placeholder="Enter your phone number"
                 required
+                style={{ padding: "10px 15px" }}
               />
             </Form.Group>
           </Col>
@@ -60,6 +63,8 @@ const ServiceBookingForm = () => {
               <Form.Control
                 type="text"
                 placeholder="Enter service location address"
+                required
+                style={{ padding: "10px 15px" }}
               />
             </Form.Group>
           </Col>
@@ -72,7 +77,7 @@ const ServiceBookingForm = () => {
           <Col md={6} className="mb-3">
             <Form.Group controlId="formServiceType">
               <Form.Label>Service Type</Form.Label>
-              <Form.Select required>
+              <Form.Select required style={{ padding: "10px 15px" }}>
                 <option value="">Select a service</option>
                 <option value="plumbing">Plumbing</option>
                 <option value="electrical">Electrical</option>
@@ -85,7 +90,7 @@ const ServiceBookingForm = () => {
           <Col md={6} className="mb-3">
             <Form.Group controlId="formUrgency">
               <Form.Label>Urgency Level</Form.Label>
-              <Form.Select required>
+              <Form.Select required style={{ padding: "10px 15px" }}>
                 <option value="">Select urgency</option>
                 <option value="emergency">Emergency</option>
                 <option value="regular">Regular</option>
@@ -100,6 +105,7 @@ const ServiceBookingForm = () => {
             as="textarea"
             rows={4}
             placeholder="Provide any specific details or instructions for the service"
+            style={{ padding: "10px 15px" }}
           />
         </Form.Group>
 
@@ -111,13 +117,21 @@ const ServiceBookingForm = () => {
           <Col md={6} className="mb-3">
             <Form.Group controlId="formDate">
               <Form.Label>Preferred Date</Form.Label>
-              <Form.Control type="date" required />
+              <Form.Control
+                type="date"
+                required
+                style={{ padding: "10px 15px" }}
+              />
             </Form.Group>
           </Col>
           <Col md={6} className="mb-3">
             <Form.Group controlId="formTime">
               <Form.Label>Preferred Time</Form.Label>
-              <Form.Control type="time" required />
+              <Form.Control
+                type="time"
+                required
+                style={{ padding: "10px 15px" }}
+              />
             </Form.Group>
           </Col>
         </Row>
