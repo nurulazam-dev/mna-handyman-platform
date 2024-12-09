@@ -13,51 +13,40 @@ const HowItWorks = () => {
     marginBottom: "15px",
   };
 
+  const stepsData = [
+    {
+      title: "Select a Service",
+      desc: "Choose from our wide range of services tailored to meet your needs.",
+      icon: <FaClipboardList size={50} style={iconStyle} />,
+    },
+    {
+      title: "Choose a Schedule",
+      desc: "Pick a date and time that fits your schedule. We’re flexible!",
+      icon: <FaCalendarAlt size={50} style={iconStyle} />,
+    },
+    {
+      title: "Get the Job Done",
+      desc: "Our expert will arrive on time and complete the job to your satisfaction.",
+      icon: <FaCheckCircle size={50} style={iconStyle} />,
+    },
+  ];
+
   return (
     <section className="container sectionClass">
       <h1 className="headingClass">How It Works</h1>
 
       <Row>
-        {/* Step 1 */}
-        <Col md={4}>
-          <Card className="h-100" style={cardStyle}>
-            <Card.Body className="text-center">
-              <FaClipboardList size={50} style={iconStyle} />
-              <Card.Title>Select a Service</Card.Title>
-              <Card.Text>
-                Choose from our wide range of services tailored to meet your
-                needs.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        {/* Step 2 */}
-        <Col md={4}>
-          <Card className="h-100" style={cardStyle}>
-            <Card.Body className="text-center">
-              <FaCalendarAlt size={50} style={iconStyle} />
-              <Card.Title>Choose a Schedule</Card.Title>
-              <Card.Text>
-                Pick a date and time that fits your schedule. We’re flexible!
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        {/* Step 3 */}
-        <Col md={4}>
-          <Card className="h-100" style={cardStyle}>
-            <Card.Body className="text-center">
-              <FaCheckCircle size={50} style={iconStyle} />
-              <Card.Title>Get the Job Done</Card.Title>
-              <Card.Text>
-                Our expert will arrive on time and complete the job to your
-                satisfaction.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
+        {stepsData.map((data, index) => (
+          <Col md={4} key={index}>
+            <Card className="h-100" style={cardStyle}>
+              <Card.Body className="text-center">
+                {data.icon}
+                <Card.Title>{data.title}</Card.Title>
+                <Card.Text>{data.desc}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
       </Row>
     </section>
   );
