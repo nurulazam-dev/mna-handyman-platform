@@ -17,6 +17,10 @@ import speImg2 from "../images/9.png";
 import speImg3 from "../images/8.png";
 import speImg4 from "../images/blog-1.jpg";
 
+import customerImg1 from "../images/2.png";
+import customerImg2 from "../images/3.png";
+import customerImg3 from "../images/4.png";
+
 export const servicesData = [
   {
     id: 1,
@@ -169,5 +173,38 @@ export const faqData = [
     title: "Are your technicians certified?",
     description:
       "Yes, all our technicians are certified and highly experienced in their respective fields. We conduct thorough background checks and training to ensure they meet our high standards of service and professionalism, giving you complete peace of mind.",
+  },
+];
+
+export const testimonialsData = [
+  {
+    name: "John Doe",
+    feedback:
+      "HandyMan Services made my life so much easier! The team was professional, timely, and delivered exceptional results.",
+    image: customerImg1,
+  },
+  {
+    name: "Sarah Parker",
+    feedback:
+      "I am extremely satisfied with the plumbing services. The technician was knowledgeable and resolved the issue efficiently.",
+    image: customerImg2,
+  },
+  {
+    name: "Michael Lee",
+    feedback:
+      "Highly recommend HandyMan Services! The carpenter did an amazing job on my custom furniture. Great attention to detail.",
+    image: customerImg3,
+  },
+  {
+    name: "Emily Clark",
+    feedback:
+      "The best handyman service I’ve ever used! Affordable pricing and excellent customer service.",
+    image: customerImg1,
+  },
+  {
+    name: "Chris Evans",
+    feedback:
+      "Quick and reliable! I needed an urgent repair, and they came through without a hitch.",
+    image: customerImg2,
   },
 ];

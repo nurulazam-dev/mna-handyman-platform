@@ -4,9 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import customerImg1 from "../assets/images/2.png";
-import customerImg2 from "../assets/images/3.png";
-import customerImg3 from "../assets/images/4.png";
+import { testimonialsData } from "../assets/data/data";
 
 const Testimonials = () => {
   const cardStyle = {
@@ -30,38 +28,6 @@ const Testimonials = () => {
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
   };
 
-  const testimonials = [
-    {
-      name: "John Doe",
-      feedback:
-        "HandyMan Services made my life so much easier! The team was professional, timely, and delivered exceptional results.",
-      image: customerImg1,
-    },
-    {
-      name: "Sarah Parker",
-      feedback:
-        "I am extremely satisfied with the plumbing services. The technician was knowledgeable and resolved the issue efficiently.",
-      image: customerImg2,
-    },
-    {
-      name: "Michael Lee",
-      feedback:
-        "Highly recommend HandyMan Services! The carpenter did an amazing job on my custom furniture. Great attention to detail.",
-      image: customerImg3,
-    },
-    {
-      name: "Emily Clark",
-      feedback:
-        "The best handyman service I’ve ever used! Affordable pricing and excellent customer service.",
-      image: customerImg1,
-    },
-    {
-      name: "Chris Evans",
-      feedback:
-        "Quick and reliable! I needed an urgent repair, and they came through without a hitch.",
-      image: customerImg2,
-    },
-  ];
   let sliderRef = useRef(null);
   const next = () => {
     sliderRef.slickNext();
@@ -95,7 +61,7 @@ const Testimonials = () => {
         }}
         {...sliderSettings}
       >
-        {testimonials.map((testimonial, index) => (
+        {testimonialsData.map((testimonial, index) => (
           <div key={index}>
             <Card style={cardStyle}>
               <Card.Body>
