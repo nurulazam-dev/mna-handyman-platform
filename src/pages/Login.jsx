@@ -66,7 +66,6 @@ const Login = () => {
   return (
     <div style={pageStyle}>
       <div style={cardStyle}>
-        {/* Image Section for Large Devices */}
         <div style={imageSectionStyle} className="d-none d-lg-block"></div>
 
         {/* Form Section */}
@@ -75,7 +74,6 @@ const Login = () => {
           <p>Please login to your account.</p>
 
           <Form>
-            {/* Email Input */}
             <Form.Group controlId="formEmail">
               <Form.Control
                 type="email"
@@ -85,7 +83,6 @@ const Login = () => {
               />
             </Form.Group>
 
-            {/* Password Input */}
             <Form.Group controlId="formPassword">
               <Form.Control
                 type="password"
@@ -95,7 +92,6 @@ const Login = () => {
               />
             </Form.Group>
 
-            {/* Login Button */}
             <Button
               type="submit"
               style={buttonStyle}

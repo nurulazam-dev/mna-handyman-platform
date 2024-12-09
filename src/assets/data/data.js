@@ -25,11 +25,11 @@ import customerImg2 from "../images/3.png";
 import customerImg3 from "../images/4.png";
 
 // blog images
-import blogImg1 from "../assets/images/blog-1.jpg";
-import blogImg2 from "../assets/images/blog-2.jpg";
-import blogImg3 from "../assets/images/blog-3.jpg";
-import blogImg4 from "../assets/images/blog-4.jpg";
-import blogImg5 from "../assets/images/blog-5.jpg";
+import blogImg1 from "../images/blog-1.jpg";
+import blogImg2 from "../images/blog-2.jpg";
+import blogImg3 from "../images/blog-3.jpg";
+import blogImg4 from "../images/blog-4.jpg";
+import blogImg5 from "../images/blog-5.jpg";
 
 export const servicesData = [
   {
