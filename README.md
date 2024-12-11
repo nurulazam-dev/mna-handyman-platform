@@ -6,6 +6,16 @@ MNA Handyman web app helps clients hire professionals for home maintenance servi
 
 ---
 
+### Pages
+
+- Home
+- Services
+- Contact
+- About
+- Login
+- Register
+- Password Reset
+
 Built using `React.js`, `React Router DOM`, `React Bootstrap`, `React Slick`,and `React Icons`.
 
 #### Features:
