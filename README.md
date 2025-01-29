@@ -20,9 +20,6 @@ MNA Handyman web app helps clients hire professionals for home maintenance servi
 - **Seamless Contact & Booking System**  
   Users can **contact the business via a dedicated Contact Page** featuring **full business details, a contact form, and an embedded Google Map**. The booking system allows **users to schedule services online, request quotes, and get automated confirmation messages**.
 
-- **Security, Performance, and Scalability**  
-  Built with **React.js**, the website ensures **fast performance, smooth navigation, and security features like password reset functionality**. The **dark/light mode toggle, interactive UI elements, and modern animations** make the site visually appealing while maintaining high functionality.
-
 ### Pages
 
 - Home
