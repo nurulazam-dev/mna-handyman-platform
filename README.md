@@ -1,7 +1,7 @@
 # [MNA Handyman](https://mna-handyman.netlify.app/)
 
 #### Handyman & Repair Services Platform.
-[Live Link]
+[Live Link](https://mna-handyman.netlify.app/)
 ---
 MNA Handyman web app helps clients hire professionals for home maintenance services.
 
